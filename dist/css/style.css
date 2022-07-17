@@ -391,6 +391,13 @@
   border-radius: 50%;
 }
 
+.no-webp .intro {
+  background: url("../img/intro-bg.png"); }
+
+.intro {
+  height: 100vh;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -562,3 +569,5 @@ body {
 .webp .header__link .header__link-hover { background: url(../img/header-hover.webp); }
 
 .webp .header__link.active .header__link-bg { background: url(../img/header-bg.webp); }
+
+.webp .intro { background: url(../img/intro-bg.webp); }
