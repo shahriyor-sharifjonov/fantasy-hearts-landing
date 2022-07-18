@@ -8,6 +8,8 @@ functions.isWebp();
 
 const setHeaderLinks = () => {
     const links = document.querySelectorAll('.header__link');
+    const windowWidth = `${document.body.clientWidth}px`;
+    console.log(windowWidth);
     links.forEach(el => {
         if(el.classList.contains('active')){
             if(!el.querySelector('.header__link-bg')){
@@ -19,7 +21,7 @@ const setHeaderLinks = () => {
             const rect = el.getBoundingClientRect();
             const left = rect.left;
             linkBg.style.left = `-${left}px`
-            linkBg.style.width = `${window.innerWidth}px`;
+            linkBg.style.width = windowWidth;
         }
         if(!el.classList.contains('active')){
             if(!el.querySelector('.header__link-hover')){
@@ -31,7 +33,7 @@ const setHeaderLinks = () => {
             const rect = el.getBoundingClientRect();
             const left = rect.left;
             linkBg.style.left = `-${left}px`
-            linkBg.style.width = `${window.innerWidth}px`;
+            linkBg.style.width = windowWidth;
         }
     })
 }
