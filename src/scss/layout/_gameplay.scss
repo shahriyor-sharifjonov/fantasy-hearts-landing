@@ -1,0 +1,16 @@
+.gameplay{
+    position: relative;
+    background: #DBECE9;
+    color: #0E322F;
+    z-index: 2;
+    margin-top: 125px;
+    padding-bottom: 70px;
+    &::before{
+        content: '';
+        position: absolute;
+        top: -125px;
+        height: 125px;
+        width: 100%;
+        background: url('../img/gameplay-top.png') top / cover no-repeat;
+    }
+}

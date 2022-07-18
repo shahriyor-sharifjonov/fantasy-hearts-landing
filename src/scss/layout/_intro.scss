@@ -1,4 +1,24 @@
 .intro{
-    background: url('../img/intro-bg.png');
+    background: url('../img/intro-bg.png') center / cover no-repeat;
     height: 100vh;
+    padding-top: 104px;
+    display: flex;
+    margin-bottom: -70px;
+    padding-bottom: 70px;
+    &__body{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 638px;
+        width: 100%;
+        color: #fff;
+    }
 }
