@@ -1,6 +1,154 @@
+mixin download-bg()
+    <svg class="default" width="276" height="72" viewBox="0 0 276 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 16L16 0H260L276 16V56L260 72H16L0 56V16Z" fill="white"/>
+    </svg>
+    <svg class="md" width="510" height="56" viewBox="0 0 510 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0 10 L 10 0 H 500 L 510 10 V 46 L 500 56 H 10 L 0 46 V 10 Z" fill="white"/>
+    </svg>
+    <svg class="sm" width="290" height="56" viewBox="0 0 290 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0 10 L 10 0 H 280 L 290 10 V 46 L 280 56 H 10 L 0 46 V 10 Z" fill="white"/>
+    </svg>
+
+mixin download-icon()
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_ii_429_894)">
+        <path d="M9.6 0L0 9.6V38.4L9.6 48H38.4L48 38.4V9.6L38.4 0H9.6Z" fill="url(#paint0_linear_429_894)"/>
+        </g>
+        <rect x="22.834" y="14.6665" width="2.33333" height="12.8333" fill="#0E322F"/>
+        <path d="M24.0003 29.8333L29.0521 24.5833H18.9485L24.0003 29.8333Z" fill="#0E322F"/>
+        <path d="M12.333 28.6665L16.9997 33.3332H30.9997L35.6663 28.6665" stroke="#0E322F" stroke-width="1.16667"/>
+        <defs>
+        <filter id="filter0_ii_429_894" x="0" y="0" width="48" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="2"/>
+        <feGaussianBlur stdDeviation="4"/>
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0.757812 0 0 0 0 0.808333 0 0 0 0 0.801647 0 0 0 1 0"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_429_894"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="1"/>
+        <feGaussianBlur stdDeviation="1"/>
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0.1925 0 0 0 0 0.4125 0 0 0 0 0.376381 0 0 0 0.2 0"/>
+        <feBlend mode="normal" in2="effect1_innerShadow_429_894" result="effect2_innerShadow_429_894"/>
+        </filter>
+        <linearGradient id="paint0_linear_429_894" x1="24" y1="0" x2="24" y2="48" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#E5EFEE"/>
+        <stop offset="1" stop-color="white" stop-opacity="0"/>
+        </linearGradient>
+        </defs>
+    </svg>
+
+mixin android-icon()
+    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 4L3.0005 8.722C3.0005 9.1525 3.3485 9.5 3.779 9.5H4V11.271C4 11.673 4.3535 12 4.755 12C5.158 12 5.5 11.673 5.5 11.2705V9.5H6.5V11.271C6.5 11.673 6.8535 12 7.2555 12C7.6585 12 8 11.673 8 11.2705V9.5L8.222 9.4995C8.651 9.4995 9 9.1515 9 8.721V4H3ZM11 4.7355C11 4.333 10.6525 4 10.25 4C9.8475 3.9995 9.5 4.3335 9.5 4.736V7.789C9.5 8.192 9.847 8.5 10.25 8.5C10.6525 8.5 11 8.1925 11 7.789V4.7355ZM2.5 4.7355C2.5 4.333 2.1525 4 1.75 4C1.3475 3.9995 1 4.3335 1 4.736V7.789C1 8.192 1.347 8.5 1.75 8.5C2.1525 8.5 2.5 8.1925 2.5 7.789V4.7355ZM7.4755 1.0795L7.9455 0.15C7.9795 0.084 7.936 0 7.864 0C7.831 0 7.799 0.019 7.782 0.0525L7.3075 0.9915C6.542 0.623 5.5355 0.5855 4.693 0.9915L4.218 0.0525C4.2015 0.019 4.1695 0 4.136 0C4.064 0 4.0205 0.084 4.0545 0.15L4.5245 1.0795C3.602 1.5965 3 2.3715 3 3.4995H9C9 2.3715 8.398 1.5965 7.4755 1.0795ZM4.7505 2.5C4.6125 2.5 4.5 2.388 4.5 2.25C4.5 2.113 4.6125 2 4.7505 2C4.8885 2 5 2.113 5 2.25C5 2.388 4.8885 2.5 4.7505 2.5ZM7.2495 2.5C7.1115 2.5 7 2.388 7 2.25C7 2.113 7.1115 2 7.2495 2C7.3875 2 7.5 2.113 7.5 2.25C7.5 2.388 7.3875 2.5 7.2495 2.5Z" fill="#738F8D"/>
+    </svg>
+
+mixin appstore-icon()
+    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11 8.8035C10.607 9.9435 9.4305 11.962 8.2185 11.984C7.4145 11.9995 7.156 11.5075 6.237 11.5075C5.3185 11.5075 5.031 11.969 4.271 11.999C2.985 12.0485 1 9.0855 1 6.5015C1 4.128 2.654 2.9515 4.099 2.93C4.874 2.916 5.606 3.4525 6.0785 3.4525C6.553 3.4525 7.442 2.8075 8.3765 2.902C8.7675 2.9185 9.866 3.0595 10.571 4.0905C8.7005 5.3115 8.992 7.865 11 8.8035ZM8.389 0C6.976 0.057 5.823 1.5395 5.984 2.7655C7.29 2.867 8.543 1.403 8.389 0Z" fill="#738F8D"/>
+    </svg>
+
+mixin settings-icon()
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.7">
+        <path d="M6 4H14M6 8H14M6 12H14" stroke="white"/>
+        <path d="M2 4H4M2 8H4M2 12H4" stroke="white"/>
+        </g>
+    </svg>
+
+mixin play-icon()
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.25 8.43301L5.25 13.6292C4.91667 13.8216 4.5 13.5811 4.5 13.1962L4.5 2.80385C4.5 2.41895 4.91667 2.17838 5.25 2.37083L14.25 7.56699C14.5833 7.75944 14.5833 8.24056 14.25 8.43301Z" stroke="white"/>
+    </svg>
+
+mixin telegram-icon()
+    <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.4" d="M8.91667 0L1 7.91667V30.0833L8.91667 38H31.0833L39 30.0833V7.91667L31.0833 0H8.91667Z" fill="#1E8778"/>
+        <g filter="url(#filter0_d_279_876)">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.1737 11.1043C26.3903 11.0111 26.6268 10.9795 26.8589 11.0129C27.0911 11.0463 27.3105 11.1435 27.4948 11.2944C27.679 11.4453 27.8215 11.6445 27.9076 11.8717C27.9937 12.0989 28.0203 12.3458 27.9846 12.5872C27.4711 16.0679 26.5297 22.4461 26.03 25.8317C25.9954 26.066 25.9034 26.287 25.7629 26.4734C25.6224 26.6598 25.4382 26.8053 25.228 26.8957C25.0178 26.9862 24.7888 27.0186 24.563 26.9898C24.3373 26.961 24.1225 26.872 23.9394 26.7314C22.1716 25.3738 19.5212 23.3384 18.1755 22.3046C18.0716 22.2249 17.9859 22.1223 17.9242 22.0042C17.8626 21.8861 17.8265 21.7553 17.8187 21.6211C17.8108 21.4869 17.8314 21.3525 17.8788 21.2275C17.9262 21.1025 17.9994 20.9898 18.0932 20.8975C19.3262 19.6837 21.7821 17.2661 23.4718 15.6027C23.5116 15.5633 23.5358 15.5098 23.5398 15.4527C23.5437 15.3956 23.527 15.339 23.4931 15.2941C23.4591 15.2492 23.4102 15.2191 23.356 15.2097C23.3019 15.2004 23.2463 15.2124 23.2002 15.2436C21.0337 16.7164 17.7156 18.9718 16.0894 20.0772C15.7847 20.2844 15.4421 20.4238 15.0833 20.4866C14.7245 20.5494 14.3571 20.5344 14.0041 20.4423C13.1086 20.209 11.817 19.8724 10.6676 19.573C10.4877 19.5261 10.3265 19.4212 10.207 19.2733C10.0876 19.1254 10.016 18.942 10.0024 18.7492C9.98878 18.5563 10.0339 18.364 10.1313 18.1994C10.2287 18.0349 10.3735 17.9066 10.5449 17.8328C14.5462 16.1102 22.3767 12.7392 26.1737 11.1043Z" fill="url(#paint0_linear_279_876)"/>
+        </g>
+        <defs>
+        <filter id="filter0_d_279_876" x="0" y="1" width="38" height="36" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset/>
+        <feGaussianBlur stdDeviation="5"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0.224063 0 0 0 0 0.995833 0 0 0 0 0.880068 0 0 0 1 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_279_876"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_279_876" result="shape"/>
+        </filter>
+        <linearGradient id="paint0_linear_279_876" x1="19" y1="11" x2="19" y2="27" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#A3E1D9"/>
+        <stop offset="1" stop-color="white"/>
+        </linearGradient>
+        </defs>
+    </svg>
+
+mixin wk-icon()
+    <svg width="42" height="38" viewBox="0 0 42 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.4" d="M9.91667 0L2 7.91667V30.0833L9.91667 38H32.0833L40 30.0833V7.91667L32.0833 0H9.91667Z" fill="#1E8778"/>
+        <g filter="url(#filter0_d_279_879)">
+        <path d="M21.8038 25C15.6539 25 12.1462 20.4955 12 13H15.0806C15.1818 18.5015 17.4528 20.8318 19.2517 21.3123V13H22.1525V17.7447C23.9289 17.5405 25.795 15.3784 26.4246 13H29.3253C28.8419 15.9309 26.8181 18.0931 25.379 18.982C26.8181 19.7027 29.123 21.5886 30 25H26.8069C26.1211 22.7177 24.4123 20.952 22.1525 20.7117V25H21.8038Z" fill="url(#paint0_linear_279_879)"/>
+        </g>
+        <defs>
+        <filter id="filter0_d_279_879" x="0" y="1" width="42" height="36" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset/>
+        <feGaussianBlur stdDeviation="6"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0.224063 0 0 0 0 0.995833 0 0 0 0 0.880068 0 0 0 1 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_279_879"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_279_879" result="shape"/>
+        </filter>
+        <linearGradient id="paint0_linear_279_879" x1="21" y1="13" x2="21" y2="25" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#A3E1D9"/>
+        <stop offset="1" stop-color="white"/>
+        </linearGradient>
+        </defs>
+    </svg>
+
+mixin play-big-icon()
+    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50.625 38.9175C51.4583 39.3986 51.4583 40.6014 50.625 41.0825L32.625 51.4748C31.7917 51.956 30.75 51.3546 30.75 50.3923L30.75 29.6077C30.75 28.6454 31.7917 28.044 32.625 28.5252L50.625 38.9175Z" stroke="white" stroke-width="1.5"/>
+        <path d="M0.5 58.9233V21.0767L21.0767 0.5H58.9233L79.5 21.0767V58.9233L58.9233 79.5H21.0767L0.5 58.9233Z" stroke="white" stroke-opacity="0.4"/>
+    </svg>
+
 mixin intro()
     .intro 
         .intro__body.container 
+            button(type="button").intro__abs    
+                +play-big-icon 
+                p Смотреть геймплей
             .intro__content
                 h1.intro__title Fantasy Hearts
                 h2.intro__desc Тактическая пошаговая стратегия с увлекательным современным геймплеем
+                .intro__row 
+                    a(href="#!" target="_blank" rel="noreferrer").intro__download 
+                        .intro__download-content
+                            p.intro__download-title Скачать игру
+                            .intro__download-row 
+                                p v.0.14 (74.5 Mb)
+                                +android-icon
+                                +appstore-icon
+                        .intro__download-icon 
+                            +download-icon 
+                        .intro__download-bg 
+                            +download-bg
+                    button(type="button").intro__play
+                        +play-icon
+                        p Геймплей
+                    button(type="button").intro__req
+                        +settings-icon
+                        p Системные требования 
+                .intro__soc 
+                    p.intro__soc-p Вступай в официальные группы, следи за новостями
+                    a(href="#!" target="_blank" rel="noreferrer").intro__soc-item 
+                        +telegram-icon 
+                    a(href="#!" target="_blank" rel="noreferrer").intro__soc-item 
+                        +wk-icon 
+                    

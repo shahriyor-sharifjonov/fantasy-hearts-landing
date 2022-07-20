@@ -9,7 +9,6 @@ functions.isWebp();
 const setHeaderLinks = () => {
     const links = document.querySelectorAll('.header__link');
     const windowWidth = `${document.body.clientWidth}px`;
-    console.log(windowWidth);
     links.forEach(el => {
         if(el.classList.contains('active')){
             if(!el.querySelector('.header__link-bg')){

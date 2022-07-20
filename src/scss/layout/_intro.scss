@@ -1,16 +1,71 @@
 .intro{
     background: url('../img/intro-bg.png') center / cover no-repeat;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 104px;
     display: flex;
     margin-bottom: -70px;
     padding-bottom: 70px;
+    overflow: hidden;
+    position: relative;
+    @include media(992){
+        padding-bottom: 130px;
+        background-image: url('../img/intro-bg-md.png');
+        background-color: #050505 !important;
+        background-size: 100% auto !important;
+        background-position: 0px 85px!important;
+    }
+    @include media(576){
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 36px;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            background: url('../img/intro-effect.png') center / cover no-repeat;
+        }
+    }
     &__body{
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+    }
+    &__abs{
+        position: absolute;
+        top: 90px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 12px;
+        @include media(992){
+            position: relative;
+            top: 0;
+            right: 0;
+            width: 100%;
+            padding-bottom: 90%;
+            *{
+                display: none;
+            }
+        }
+        svg{
+            filter: drop-shadow(0px 0px 4px #39FEE0);
+        }
+        p{
+            font-family: 'Antikvarika';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: -0.02em;
+            color: #FFFFFF;
+            max-width: 100px;
+            text-shadow: 0px 0px 8px #39FEE0;
+        }   
     }
     &__content{
         display: flex;
@@ -20,5 +75,251 @@
         max-width: 638px;
         width: 100%;
         color: #fff;
+        @include media(768){
+            align-items: center;
+        }
+    }
+    &__title{
+        font-family: 'Antikvarika';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 88px;
+        line-height: 99px;
+        margin-bottom: 12px;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 12px #39FEE0;
+        position: relative;
+        isolation: isolate;
+        @include media(992){
+            font-size: 80px;
+            line-height: 90px;
+            margin-bottom: 21px;
+        }
+        @include media(768){
+            font-size: 48px;
+            line-height: 54px;
+            margin-bottom: 14px;
+            text-align: center;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: calc(100% + 100px);
+            height: calc(100% + 100px);
+            background: url('../img/intro-title-bg.png') center / cover no-repeat;
+            background-size: 99% !important;
+            z-index: -1;
+            @include media(360){
+                left: -50%;
+                width: calc(100% + 50%);
+            }
+        }
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        max-width: 411px;
+        color: #FFFFFF;
+        margin-bottom: 40px; 
+        @include media(992){
+            font-size: 20px;
+            line-height: 27px;
+            margin-bottom: 32px;            
+        }      
+        @include media(768){
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            max-width: 333px;
+            margin-bottom: 24px;
+        } 
+    }
+    &__row{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 25px 24px;
+        margin-bottom: 32px;
+        @include media(768){
+            flex-wrap: wrap;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        @include media(576){
+            width: 290px;
+        }
+    }
+    &__download{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        isolation: isolate;
+        padding: 12px 12px 12px 28px;
+        width: 276px;
+        height: 72px;
+        text-decoration: none;
+        @include media(768){
+            padding: 10px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            height: 56px;
+        }
+        @include media(576){
+            width: 290px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        &-bg{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            filter: drop-shadow(12px 0 20px rgba(57, 254, 224, 0.32));
+            svg{
+                &.default{
+                    @include media(768){
+                        display: none;
+                    }
+                }
+                &.md{
+                    display: none;
+                    @include media(768){
+                        display: block;
+                    }
+                    @include media(576){
+                        display: none;
+                    }
+                }
+                &.sm{
+                    display: none;
+                    @include media(576){
+                        display: block;
+                    }
+                }
+            }
+        }
+        &-icon{
+            line-height: 0;
+            @include media(768){
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                width: 40px;
+                height: 40px;
+                svg{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        &-title{
+            font-family: 'Antikvarika';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 27px;
+            color: #0E322F;
+            margin-bottom: 2px;
+            @include media(768){
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 20px;
+                margin-bottom: 0;
+            }
+        }
+        &-row{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 4px;
+            @include media(768){
+                justify-content: center;
+                svg{
+                    display: none;
+                }
+            }
+            p{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                color: #738F8D; 
+                margin-right: 2px;  
+                @include media(768){
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 16px;
+                }             
+            }
+        }
+    }
+    &__play{
+        align-items: center;
+        justify-content: center;
+        column-gap: 8px;
+        display: none;
+        @include media(992){
+            display: flex;
+        }
+        svg{
+            filter: drop-shadow(0px 0px 6px #39FEE0);
+        }
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: -0.02em;
+            color: #FFFFFF;            
+            text-shadow: 0px 0px 8px #39FEE0;
+        }
+    }
+    &__req{
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+            color: #FFFFFF;
+            opacity: 0.7;
+            border-bottom: 1px dashed #FFFFFF;
+        }
+    }
+    &__soc{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 8px;
+        @include media(576){
+            flex-wrap: wrap;
+            max-width: 217px;
+            justify-content: center;
+            row-gap: 12px;
+        }
+        &-p{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            color: #FFFFFF;
+            margin-right: 16px;
+            max-width: 217px;
+            @include media(576){
+                max-width: 100%;
+                width: 100%;
+                text-align: center;
+                margin-right: 0;
+            }
+        }
     }
 }
