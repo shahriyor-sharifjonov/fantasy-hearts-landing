@@ -1,4 +1,48 @@
+mixin star-icon()
+    <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.5 0.5L13.336 8.16405L21 11L13.336 13.836L10.5 21.5L7.66405 13.836L0 11L7.66405 8.16405L10.5 0.5Z" fill="#0E322F"/>
+    </svg>
+
 mixin gameplay()
     .gameplay 
-        .gameplay__body.container 
-            h2.gameplay__title Проникнись захватывающей атмосферой
+        .gameplay__wrapper 
+            .gameplay__body.container 
+                h2.gameplay__title 
+                    +star-icon
+                    p Проникнись захватывающей атмосферой
+                    +star-icon
+                .gameplay__thumb.swiper 
+                    .swiper-wrapper.gameplay-wrapper 
+                        .swiper-slide 
+                            img(src="@img/gameplay-1.png", alt="" draggable="false")
+                            .swiper-slide-shadow
+                                img(src="@img/gameplay-1.png", alt="" draggable="false")
+                        .swiper-slide 
+                            img(src="@img/gameplay-2.png", alt="" draggable="false")
+                            .swiper-slide-shadow
+                                img(src="@img/gameplay-2.png", alt="" draggable="false")
+                        .swiper-slide 
+                            img(src="@img/gameplay-3.png", alt="" draggable="false")
+                            .swiper-slide-shadow
+                                img(src="@img/gameplay-3.png", alt="" draggable="false")
+                        .swiper-slide 
+                            img(src="@img/gameplay-4.png", alt="" draggable="false")
+                            .swiper-slide-shadow
+                                img(src="@img/gameplay-4.png", alt="" draggable="false")
+                        .swiper-slide 
+                            img(src="@img/gameplay-5.png", alt="" draggable="false")
+                            .swiper-slide-shadow
+                                img(src="@img/gameplay-5.png", alt="" draggable="false")
+                p.gameplay__desc Геймплей игры, в которую легко влюбиться!
+                .gameplay__pagination.swiper 
+                    .swiper-wrapper.gameplay-wrapper 
+                        .swiper-slide 
+                            img(src="@img/gameplay-thumb-1.png", alt="" draggable="false")
+                        .swiper-slide 
+                            img(src="@img/gameplay-thumb-2.png", alt="" draggable="false")
+                        .swiper-slide 
+                            img(src="@img/gameplay-thumb-3.png", alt="" draggable="false")
+                        .swiper-slide  
+                            img(src="@img/gameplay-thumb-4.png", alt="" draggable="false")
+                        .swiper-slide 
+                            img(src="@img/gameplay-thumb-5.png", alt="" draggable="false")

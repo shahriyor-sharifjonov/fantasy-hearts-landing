@@ -2,9 +2,9 @@ import * as functions from "./modules/functions.js";
 
 functions.isWebp();
 
-// import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination, Thumbs, EffectCoverflow } from 'swiper';
 
-// const swiper = new Swiper();
+const swiper = new Swiper();
 
 const setHeaderLinks = () => {
     const links = document.querySelectorAll('.header__link');
@@ -37,7 +37,6 @@ const setHeaderLinks = () => {
     })
 }
 
-
 const headerMenu = () => {
     const headerButton = document.querySelector(".header__button");
     const headerMenu = document.querySelector(".header__menu");
@@ -62,11 +61,41 @@ const headerMenu = () => {
     };
 }
 
+const gamePlaySwiper = () => {
+    var swiper1 = new Swiper(".gameplay__pagination", {
+        spaceBetween: 4,
+        slidesPerView: "auto",
+        watchSlidesProgress: true,
+        centeredSlides: true,
+        initialSlide: 2,
+    });
+
+    new Swiper(".gameplay__thumb", {
+        modules: [Thumbs, EffectCoverflow],
+        slidesPerView: "auto",
+        centeredSlides: true,
+        initialSlide: 2,
+        thumbs: {
+            swiper: swiper1,
+        },
+        effect: "coverflow",
+        coverflowEffect: {
+            rotate: 0,
+            stretch: -80,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+        },
+    });
+}
+
 window.addEventListener('load', () => {
     setHeaderLinks()
     headerMenu()
+    gamePlaySwiper()
 })
 
 window.addEventListener('resize', () => {
     setHeaderLinks()
 })
+
