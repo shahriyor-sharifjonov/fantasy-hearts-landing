@@ -41,7 +41,7 @@ mixin gameplay()
     .gameplay 
         .gameplay__wrapper 
             .gameplay__body.container 
-                h2.gameplay__title 
+                h2.gameplay__title.title  
                     +star-icon
                     p Проникнись захватывающей атмосферой
                     +star-icon
@@ -72,7 +72,7 @@ mixin gameplay()
                             .swiper-slide-shadow
                                 img(src="@img/gameplay-4.png", alt="" draggable="false")
                         .swiper-slide 
-                            a(href="#!").swiper-slide-play 
+                            a(href="#!").swiper-slide-play  
                                 +swiper-slide-play-icon
                             img(src="@img/gameplay-5.png", alt="" draggable="false")  
                             .swiper-slide-shadow

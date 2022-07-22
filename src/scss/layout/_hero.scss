@@ -1,0 +1,29 @@
+.hero{
+    position: relative;
+    color: #0E322F;
+    z-index: 2;
+    background-color: #fff !important;
+    background: url('../img/hero-bg.png') top / cover no-repeat;
+    width: 100%;
+    @include media(768){
+        padding-bottom: 220px;
+    }
+    @include media(576){
+        padding-bottom: 180px;
+    }
+    @include media(360){
+        padding-bottom: 130px;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: -124px;
+        height: 125px;
+        width: 100%;
+        background: url('../img/hero-top.png') top / cover no-repeat;
+        @include media(576){
+            height: 100px;
+            top: -100px;
+        }
+    }
+}
