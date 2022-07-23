@@ -1,8 +1,43 @@
 include gameplay.pug 
+include rect.pug 
 
 mixin hero()
     .hero 
-        h2.title 
-            +star-icon 
-            p Выбери своего героя
-            +star-icon
+        .hero__wrapper 
+            .hero__body.container 
+                h2.title 
+                    +star-icon 
+                    p Выбери своего героя
+                    +star-icon
+                .hero__content.swiper 
+                    .swiper-wrapper 
+                        .hero__slide.swiper-slide 
+                            .hero__slide-img
+                                img(src="@img/hero-big-1.png", alt="" draggable="false")
+                            span.hero__slide-tag.rect Человек, Воин
+                                +rect
+                        .hero__slide.swiper-slide.pink 
+                            .hero__slide-img
+                                img(src="@img/hero-big-5.png", alt="" draggable="false")
+                            span.hero__slide-tag.rect Человек, Воин
+                                +rect
+                        .hero__slide.swiper-slide 
+                            .hero__slide-img
+                                img(src="@img/hero-big-1.png", alt="" draggable="false")
+                            span.hero__slide-tag.rect Человек, Воин
+                                +rect
+                        .hero__slide.swiper-slide.pink 
+                            .hero__slide-img
+                                img(src="@img/hero-big-5.png", alt="" draggable="false")
+                            span.hero__slide-tag.rect Человек, Воин
+                                +rect
+                        .hero__slide.swiper-slide 
+                            .hero__slide-img
+                                img(src="@img/hero-big-1.png", alt="" draggable="false")
+                            span.hero__slide-tag.rect Человек, Воин
+                                +rect
+                        .hero__slide.swiper-slide.pink 
+                            .hero__slide-img
+                                img(src="@img/hero-big-5.png", alt="" draggable="false")
+                            span.hero__slide-tag.rect Человек, Воин
+                                +rect

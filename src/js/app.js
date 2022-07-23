@@ -95,10 +95,25 @@ const gamePlaySwiper = () => {
     });
 }
 
+const heroSlider = () => {
+    var swiper1 = new Swiper(".hero__content", {
+        spaceBetween: 4,
+        slidesPerView: "auto",
+        watchSlidesProgress: true,
+        centeredSlides: true,
+        initialSlide: 2,
+    });
+}
+
 window.addEventListener('load', () => {
     setHeaderLinks()
     headerMenu()
-    gamePlaySwiper()
+    if(document.querySelector('.gameplay__pagination')){
+        gamePlaySwiper()
+    }
+    if(document.querySelector('.hero__content')){
+        heroSlider()
+    }
 })
 
 window.addEventListener('resize', () => {
