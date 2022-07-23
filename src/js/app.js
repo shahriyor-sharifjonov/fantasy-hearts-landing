@@ -68,6 +68,12 @@ const gamePlaySwiper = () => {
         watchSlidesProgress: true,
         centeredSlides: true,
         initialSlide: 2,
+        allowTouchMove: true,
+        breakpoints: {
+            400: {
+                allowTouchMove: false,
+            }
+        }
     });
 
     new Swiper(".gameplay__thumb", {
