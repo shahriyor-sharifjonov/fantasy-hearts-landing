@@ -34,17 +34,17 @@ html(lang="en")
                                         p.store__desc Покупка статуса «Меценат» дает вам рейтинг в таблице меценатов, закрытый чат и многое другое, всего мест — 50. Покупая этот статус, вы активно участвуете в развитии игры, получаете первыми советы от авторов и влияете на ход событий. Введите произвольную сумму, ваш донат поможет развитию проекта
                                         form(action="").store__form.df.disable-md
                                             input(type="number" placeholder="Введите сумму в руб").store__input
-                                            button(type="submit").store__btn.disabled Купить
+                                            button(type="submit").store__btn.disabled.form__btn Купить
                                 form(action="").store__form.df.enable-md
                                     input(type="number" placeholder="Введите сумму в руб").store__input
-                                    button(type="submit").store__btn.disabled Купить
+                                    button(type="submit").store__btn.disabled.form__btn Купить
                             .store__item    
                                 .store__img 
                                     img(src="@img/store-img-2.png", alt="")
                                 .store__content 
                                     p.store__title Алмазы
                                     p.store__desc Алмазы позволяют приобрести дополнительные предметы в игровом магазине. Можно купить произвольное количество, минимально — 20 штук.
-                                    form(action="").store__form.not_bg
+                                    form(action="").store__form
                                         .store__filter 
                                             button(type="button").store__button.disabled.minus
                                             span.store__filter-num 20
@@ -64,7 +64,7 @@ html(lang="en")
                                         li.store__li Золото: 58 600
                                         li.store__li Осколки: 950
                                     p.store__desc Получите скидку 30% в связи с ранним доступом. После вайпа товары вернут, если их купить до вайпа.
-                                    form(action="").store__form.not_bg
+                                    form(action="").store__form
                                         .store__bottom
                                             button(type="submit").store__btn.active Купить
                                             p.store__bottom-p.discount #[span 740 руб] #[span.discount 1057 руб]
@@ -80,7 +80,7 @@ html(lang="en")
                                         li.store__li Золото: 192 600
                                         li.store__li Осколки: 2175
                                     p.store__desc Получите скидку 30% в связи с ранним доступом. После вайпа товары вернут, если их купить до вайпа.
-                                    form(action="").store__form.not_bg
+                                    form(action="").store__form
                                         .store__bottom
                                             button(type="submit").store__btn.active Купить
                                             p.store__bottom-p.discount #[span 2110 руб] #[span.discount 3014 руб]
@@ -96,7 +96,7 @@ html(lang="en")
                                         li.store__li Золото: 871 100
                                         li.store__li Осколки: 7075
                                     p.store__desc Получите скидку 35% в связи с ранним доступом. После вайпа товары вернут, если их купить до вайпа.
-                                    form(action="").store__form.not_bg
+                                    form(action="").store__form
                                         .store__bottom
                                             button(type="submit").store__btn.active Купить
                                             p.store__bottom-p.discount #[span 7 961 руб] #[span.discount 12 248 руб]
@@ -109,7 +109,7 @@ html(lang="en")
                                     p.store__title Набор из 10 сфер
                                     p.store__desc Сфера позволяет получить легендарных и мифических героев из Портала.
                                     p.store__desc Получите скидку 35% в связи с ранним доступом. После вайпа товары вернут, если их купить до вайпа.
-                                    form(action="").store__form.not_bg
+                                    form(action="").store__form
                                         .store__bottom
                                             button(type="submit").store__btn.active Купить
                                             p.store__bottom-p.discount #[span 875 руб] #[span.discount 1250 руб]
@@ -124,7 +124,7 @@ html(lang="en")
                                         li.store__li Свитки: 10
                                         li.store__li Золото: 30 000
                                         li.store__li Осколки: 200
-                                    form(action="").store__form.not_bg
+                                    form(action="").store__form
                                         .store__bottom
                                             button(type="submit").store__btn.active Купить
                                             p.store__bottom-p.discount #[span 680 руб]
@@ -135,7 +135,7 @@ html(lang="en")
                                     p.store__title Лицензия приключенца
                                     p.store__desc Срок действия: 30 дней.
                                     p.store__desc Повышает награды от активностей (игровые режимы, квесты, повторяемые герои) на 20%.
-                                    form(action="").store__form.not_bg
+                                    form(action="").store__form
                                         .store__bottom
                                             button(type="submit").store__btn.active Купить
                                             p.store__bottom-p.discount #[span 100 руб]

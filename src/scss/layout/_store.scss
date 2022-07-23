@@ -77,29 +77,14 @@
         }
     }
     &__form{
-        background: url(../img/store-form-bg.png) center / cover no-repeat;
-        display: flex;
-        flex-direction: column;
         &.df{
-            flex-direction: row;
+            display: flex;
             justify-content: space-between;
-            align-items: center;
-            width: 388px;
+            align-items: stretch;
+            background: url(../img/store-form-bg.png) center / cover no-repeat;
             height: 54px;
-            @include media(768){
-                margin-left: 120px;
-                width: 100%;
-                background: none !important;
-                width: 290px;
-                height: 48px;
-                background: url(../img/store-form-bg-md.png) center / cover no-repeat !important;
-            }
-            @include media(450){
-                margin-left: auto;
-            }
-        }
-        &.not_bg{
-            background: none !important;
+            width: 388px;
+            margin-left: auto;
         }
         &.enable-md{
             @include media(768){
@@ -119,6 +104,9 @@
         width: 100%;
         margin-left: 20px;
         padding-right: 20px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        height: calc(100% - 4px);
     }
     &__btn{
         font-family: 'Antikvarika';
@@ -130,7 +118,7 @@
         height: 100%;
         padding: 13px 24px;
         transition: 300ms ease;
-        @include media(768){
+        @include media(576){
             font-weight: 400;
             font-size: 20px;
             line-height: 23px;
@@ -153,7 +141,7 @@
         padding: 4px;
         background: url(../img/store-filter-bg.png) center / cover no-repeat;
         @include media(768){
-            background: url(../img/store-filter-bg-md.png) center / cover no-repeat;
+            background: url(../img/store-filter-bg-md.png) center / cover no-repeat !important;
         }
         &-num{
             font-family: 'Antikvarika';
@@ -172,7 +160,7 @@
         width: 46px;
         height: 46px;
         position: relative;
-        @include media(768){
+        @include media(576){
             width: 40px;
             height: 40px;
         }
