@@ -1,0 +1,27 @@
+.breadcrumb{
+    padding-top: 160px;
+    padding-bottom: 40px;
+    @include media(1400){
+        padding-top: 145px;
+    }
+    @include media(992){
+        padding-top: 120px;
+        padding-bottom: 24px;
+    }
+    &__p{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 6px;
+        a{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            color: #68827F;
+            text-decoration: none;
+            &.active{
+                color: #0E322F;
+            }
+        }
+    }
+}
