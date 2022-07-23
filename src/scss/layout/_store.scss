@@ -1,5 +1,8 @@
 .store{
     padding-bottom: 80px;
+    @include media(1200){
+        padding-bottom: 60px;
+    }
     &__subtitle{
         margin-bottom: 64px;
         @include media(1200){
@@ -39,6 +42,9 @@
         }
         @include media(768){
             column-gap: 20px;
+        }
+        @include media(374){
+            column-gap: 0;
         }
     }
     &__content{
@@ -84,7 +90,17 @@
             background: url(../img/store-form-bg.png) center / cover no-repeat;
             height: 54px;
             width: 388px;
-            margin-left: auto;
+            @include media(768){
+                margin-left: auto;
+            }
+            @include media(575){
+                height: 48px;
+                width: 350px;
+            }
+            @include media(450){
+                width: 290px;
+                background: url(../img/store-form-bg-md.png) center / cover no-repeat;
+            }
         }
         &.enable-md{
             @include media(768){
@@ -141,7 +157,10 @@
         padding: 4px;
         background: url(../img/store-filter-bg.png) center / cover no-repeat;
         @include media(768){
-            background: url(../img/store-filter-bg-md.png) center / cover no-repeat !important;
+            background: url(../img/store-filter-bg-md.png) center / cover no-repeat;
+            max-width: 152px;
+            width: 100%;
+            column-gap: 8px;
         }
         &-num{
             font-family: 'Antikvarika';
@@ -153,6 +172,15 @@
             color: #0E322F;
             min-width: 56px;
             width: 56px;
+            @include media(768){
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 23px;
+                text-align: center;
+                color: #0E322F;    
+                min-width: 48px;
+                width: 48px;            
+            }
         }
     }
     &__button{
