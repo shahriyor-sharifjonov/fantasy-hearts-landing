@@ -19,8 +19,15 @@ html(lang="en")
                             </svg>
                             | #[a(href="store.html").active Герои]
                 section.heroes 
-                     
-                    
+                    .heroes__body.container 
+                        h2.store__subtitle.subtitle 
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.5 0L17.1462 9.85378L27 13.5L17.1462 17.1462L13.5 27L9.85378 17.1462L0 13.5L9.85378 9.85378L13.5 0Z" fill="#0E322F"/>
+                            </svg> Герои
+                        .heroes__row 
+                            .heroes__item 
+                                .heroes__item-img 
+                                    img(src="@img/heroes-img-1.png", alt="")
             include components/footer 
             +footer
         script(src="js/app.min.js")  

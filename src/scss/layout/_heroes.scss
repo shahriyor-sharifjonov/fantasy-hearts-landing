@@ -1,0 +1,13 @@
+.heroes{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 800px;
+        background: url(../img/heroes-before.png) top / cover no-repeat;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+}

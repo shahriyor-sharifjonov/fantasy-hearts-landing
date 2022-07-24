@@ -1695,6 +1695,23 @@
   width: 100%;
 }
 
+.heroes {
+  position: relative;
+}
+
+.no-webp .heroes::before {
+  background: url(../img/heroes-before.png) top/cover no-repeat; }
+
+.heroes::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 800px;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -2688,6 +2705,8 @@ input[type=number] {
 .webp .store__button { background: url(../img/store-filter-btn-bg.webp) center/cover no-repeat; }
 
 .webp .store__img .store__abs { background: url(../img/star-bg.webp) center/cover no-repeat; }
+
+.webp .heroes::before { background: url(../img/heroes-before.webp) top/cover no-repeat; }
 
 @media (max-width: 992px) {
 
