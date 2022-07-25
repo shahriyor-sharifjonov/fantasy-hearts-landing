@@ -1,3 +1,5 @@
+include components/rect.pug
+
 doctype html
 html(lang="en")
     head
@@ -29,7 +31,8 @@ html(lang="en")
                                 .heroes__item-img 
                                     img(src="@img/heroes-img-1.png", alt="")
                                 .heroes__item-content   
-                                    span.heroes__type Эльф, Маг
+                                    span.heroes__type.rect Эльф, Маг
+                                        +rect
                                     p.heroes__name Эльфийский оракул Эльтиар
                                     p.heroes__desc От взора его не скроется ни прошлое, ни будущее. Некоторые поговаривают, что он может даже повлиять на судьбу.
                                     .heroes__infos 
@@ -77,9 +80,10 @@ html(lang="en")
                                 .heroes__item-img 
                                     img(src="@img/heroes-img-2.png", alt="")
                                 .heroes__item-content   
-                                    span.heroes__type Эльф, Маг
-                                    p.heroes__name Эльфийский оракул Эльтиар
-                                    p.heroes__desc От взора его не скроется ни прошлое, ни будущее. Некоторые поговаривают, что он может даже повлиять на судьбу.
+                                    span.heroes__type.rect Человек, Поддержка
+                                        +rect
+                                    p.heroes__name Жрец Солнца
+                                    p.heroes__desc Из рук его льется небесный свет, очищая и заживляя раны. Незаменимый союзник и верный друг.
                                     .heroes__infos 
                                         p.heroes__info 370 
                                             <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">

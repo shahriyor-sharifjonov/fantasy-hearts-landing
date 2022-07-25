@@ -42,9 +42,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 180px;
-        height: 32px;
-        background: url(../img/heroes-type-bg.png) center / cover no-repeat;
+        padding: 7px 12px;
+        width: max-content;
+        &.rect{
+            margin-bottom: 20px;
+        }
     }
     &__name{
         font-family: 'Antikvarika';
