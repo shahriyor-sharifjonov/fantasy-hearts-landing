@@ -1840,6 +1840,13 @@
           column-gap: 12px;
 }
 
+.heroes__skills-p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #68827F;
+}
+
 * {
   margin: 0;
   padding: 0;
