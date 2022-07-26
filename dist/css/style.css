@@ -941,6 +941,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  --bg: linear-gradient(167.38deg, #74E164 13.55%, #64E1D2 89.37%) !important;
+  --size: 22px !important;
 }
 
 .hero__slide.swiper-slide-active {
@@ -1092,7 +1094,7 @@ body {
   margin-bottom: 50px;
 }
 
-.rect-top {
+.rect > .rect-top {
   position: absolute;
   left: var(--size);
   right: var(--size);
@@ -1101,7 +1103,7 @@ body {
   background: var(--bg);
 }
 
-.rect-top-left {
+.rect > .rect-top-left {
   position: absolute;
   height: calc(var(--size) + var(--size) / 4);
   background: var(--bg);
@@ -1113,7 +1115,7 @@ body {
           transform: rotate(45deg);
 }
 
-.rect-top-right {
+.rect > .rect-top-right {
   position: absolute;
   height: calc(var(--size) + var(--size) / 4);
   background: var(--bg);
@@ -1125,7 +1127,7 @@ body {
           transform: rotate(-45deg);
 }
 
-.rect-right {
+.rect > .rect-right {
   position: absolute;
   top: var(--size);
   bottom: var(--size);
@@ -1134,7 +1136,7 @@ body {
   background: var(--bg);
 }
 
-.rect-bot {
+.rect > .rect-bot {
   position: absolute;
   left: var(--size);
   right: var(--size);
@@ -1143,7 +1145,7 @@ body {
   background: var(--bg);
 }
 
-.rect-bot-left {
+.rect > .rect-bot-left {
   position: absolute;
   height: calc(var(--size) + var(--size) / 4);
   background: var(--bg);
@@ -1155,7 +1157,7 @@ body {
           transform: rotate(-45deg);
 }
 
-.rect-bot-right {
+.rect > .rect-bot-right {
   position: absolute;
   height: calc(var(--size) + var(--size) / 4);
   background: var(--bg);
@@ -1167,7 +1169,7 @@ body {
           transform: rotate(45deg);
 }
 
-.rect-left {
+.rect > .rect-left {
   position: absolute;
   top: var(--size);
   bottom: var(--size);

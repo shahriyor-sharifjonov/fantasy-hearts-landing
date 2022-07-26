@@ -67,72 +67,74 @@ body{
     position: relative;
     padding: 7px 12px;
     margin-bottom: 50px;
-    &-top{
-        position: absolute;
-        left: var(--size);
-        right: var(--size);
-        top: 0;
-        height: 2px;
-        background: var(--bg);
-        &-left{
+    &>.rect{
+        &-top{
             position: absolute;
-            height: calc(var(--size) + var(--size) / 4);
-            background: var(--bg);
-            left: calc(var(--size) / 2);
+            left: var(--size);
+            right: var(--size);
             top: 0;
-            width: 2px;
-            transform: rotate(45deg);
+            height: 2px;
+            background: var(--bg);
+            &-left{
+                position: absolute;
+                height: calc(var(--size) + var(--size) / 4);
+                background: var(--bg);
+                left: calc(var(--size) / 2);
+                top: 0;
+                width: 2px;
+                transform: rotate(45deg);
+            }
+            &-right{
+                position: absolute;
+                height: calc(var(--size) + var(--size) / 4);
+                background: var(--bg);
+                right: calc(var(--size) / 2);
+                top: 0;
+                width: 2px;
+                transform: rotate(-45deg);
+            }
         }
         &-right{
             position: absolute;
-            height: calc(var(--size) + var(--size) / 4);
-            background: var(--bg);
-            right: calc(var(--size) / 2);
-            top: 0;
+            top: var(--size);
+            bottom: var(--size);
+            right: 0;
             width: 2px;
-            transform: rotate(-45deg);
+            background: var(--bg);
         }
-    }
-    &-right{
-        position: absolute;
-        top: var(--size);
-        bottom: var(--size);
-        right: 0;
-        width: 2px;
-        background: var(--bg);
-    }
-    &-bot{
-        position: absolute;
-        left: var(--size);
-        right: var(--size);
-        bottom: 0;
-        height: 2px;
-        background: var(--bg);
+        &-bot{
+            position: absolute;
+            left: var(--size);
+            right: var(--size);
+            bottom: 0;
+            height: 2px;
+            background: var(--bg);
+            &-left{
+                position: absolute;
+                height: calc(var(--size) + var(--size) / 4);
+                background: var(--bg);
+                left: calc(var(--size) / 2);
+                bottom: 0;
+                width: 2px;
+                transform: rotate(-45deg);
+            }
+            &-right{
+                position: absolute;
+                height: calc(var(--size) + var(--size) / 4);
+                background: var(--bg);
+                right: calc(var(--size) / 2);
+                bottom: 0;
+                width: 2px;
+                transform: rotate(45deg);
+            }
+        }
         &-left{
             position: absolute;
-            height: calc(var(--size) + var(--size) / 4);
-            background: var(--bg);
-            left: calc(var(--size) / 2);
-            bottom: 0;
+            top: var(--size);
+            bottom: var(--size);
+            left: 0;
             width: 2px;
-            transform: rotate(-45deg);
-        }
-        &-right{
-            position: absolute;
-            height: calc(var(--size) + var(--size) / 4);
             background: var(--bg);
-            right: calc(var(--size) / 2);
-            bottom: 0;
-            width: 2px;
-            transform: rotate(45deg);
         }
-    }
-    &-left{
-        position: absolute;
-        top: var(--size);
-        bottom: var(--size);
-        left: 0;
-        width: 2px;
-        background: var(--bg);
     }
 }
