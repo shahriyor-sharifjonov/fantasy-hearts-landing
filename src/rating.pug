@@ -1,3 +1,5 @@
+include components/rect.pug
+
 doctype html
 html(lang="en")
     head
@@ -21,14 +23,14 @@ html(lang="en")
                 section.rating 
                     .rating__body.container 
                         .rating__top 
-                            .rating__left 
-                                h2.rating__subtitle.subtitle Рейтинг меценатов
+                            .rating__left
+                                h2.rating__subtitle.subtitle
+                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.5 0L17.1462 9.85378L27 13.5L17.1462 17.1462L13.5 27L9.85378 17.1462L0 13.5L9.85378 9.85378L13.5 0Z" fill="#0E322F"/>
+                                    </svg> Рейтинг меценатов
                                 p.rating__desc Доска почета наших донатеров. Ваше имя появится в списке, если вы купите в Магазине статус «Меценат». Чем больше сумма ваших покупок, тем выше ваше имя в рейтинге. Если сумма совпадает с другим донатером, выше окажется тот, кто внес деньги раньше.
-                                a(href="#!").rating__btn Подробнее 
-                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 6H12" stroke="#0E322F"/>
-                                        <path d="M7 1C7.86854 3.72607 8.88726 4.84527 12 6C8.90751 7.18829 7.95537 8.37847 7 11" stroke="#0E322F" stroke-width="1.5"/>
-                                    </svg> 
+                                a(href="#!").rating__btn.rect Подробнее <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 6H12" stroke="#0E322F"/><path d="M7 1C7.86854 3.72607 8.88726 4.84527 12 6C8.90751 7.18829 7.95537 8.37847 7 11" stroke="#0E322F" stroke-width="1.5"/></svg>   
+                                    +rect 
                             .rating__right 
                                 .store__item    
                                     .store__img 
@@ -166,11 +168,12 @@ html(lang="en")
                                         p.rating__adress (ser************gmail.com)
                                     .rating__item-right 
                                         p.rating__price 80 #[img(src="@img/rating-money.png", alt="" draggable="false" loading="lazy")]
-                        a(href="#!").rating__btn.rating__btn_bottom Попасть в доску 
+                        a(href="#!").rating__btn.rating__btn_bottom.rect Попасть в доску 
                             <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 6H12" stroke="#0E322F"/>
                                 <path d="M7 1C7.86854 3.72607 8.88726 4.84527 12 6C8.90751 7.18829 7.95537 8.37847 7 11" stroke="#0E322F" stroke-width="1.5"/>
                             </svg> 
+                            +rect
             include components/footer 
             +footer
         script(src="js/app.min.js") 
