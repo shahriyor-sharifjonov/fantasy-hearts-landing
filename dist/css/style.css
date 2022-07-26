@@ -1910,6 +1910,31 @@
   color: #68827F;
 }
 
+.rating {
+  padding-bottom: 80px;
+}
+
+.rating__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 56px;
+     -moz-column-gap: 56px;
+          column-gap: 56px;
+  margin-bottom: 73px;
+}
+
+.rating .store__item {
+  width: 100%;
+}
+
+.rating .store__content {
+  margin-top: 33px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -2291,6 +2316,10 @@ input[type=number] {
 
   .heroes__item-content {
     padding-top: 40px;
+  }
+
+  .rating {
+    padding-bottom: 60px;
   }
 
   .title svg {

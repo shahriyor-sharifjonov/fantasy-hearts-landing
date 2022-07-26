@@ -45,24 +45,27 @@
       <main class="main"> 
         <div class="breadcrumb"> 
           <div class="breadcrumb__body container">
-            <p class="breadcrumb__p"><a href="index.html">Главная</a> <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <p class="breadcrumb__p"><a href="index.html">Главная</a><svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3.5 0L4.44532 2.55468L7 3.5L4.44532 4.44532L3.5 7L2.55468 4.44532L0 3.5L2.55468 2.55468L3.5 0Z" fill="#68827F"/>
-</svg><a class="active" href="store.html">Магазин</a>
+</svg><a class="active" href="store.html">Рейтинг меценатов</a>
             </p>
           </div>
         </div>
-        <section class="store"> 
-          <div class="store__body container"> 
-            <h2 class="store__subtitle subtitle">
-               <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.5 0L17.1462 9.85378L27 13.5L17.1462 17.1462L13.5 27L9.85378 17.1462L0 13.5L9.85378 9.85378L13.5 0Z" fill="#0E322F"/>
-</svg> Магазин
-            </h2>
-            <div class="store__row">
-              <div class="store__wrapper"> 
+        <section class="rating"> 
+          <div class="rating__body container"> 
+            <div class="rating__top"> 
+              <div class="rating__left"> 
+                <h2 class="rating__subtitle subtitle">Рейтинг меценатов</h2>
+                <p class="rating__desc">Доска почета наших донатеров. Ваше имя появится в списке, если вы купите в Магазине статус «Меценат». Чем больше сумма ваших покупок, тем выше ваше имя в рейтинге. Если сумма совпадает с другим донатером, выше окажется тот, кто внес деньги раньше.</p><a class="rating__btn" href="#!">
+                  Подробнее <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 6H12" stroke="#0E322F"/>
+<path d="M7 1C7.86854 3.72607 8.88726 4.84527 12 6C8.90751 7.18829 7.95537 8.37847 7 11" stroke="#0E322F" stroke-width="1.5"/>
+</svg> </a>
+              </div>
+              <div class="rating__right"> 
                 <div class="store__item">   
                   <div class="store__img"> <picture><source srcset="img/store-img-1.webp" type="image/webp"><img src="img/store-img-1.png" alt=""></picture></div>
-                  <div class="store__content"> 
+                  <div class="store__content rating__item-content"> 
                     <p class="store__title">Меценат</p>
                     <p class="store__desc">Покупка статуса «Меценат» дает вам рейтинг в таблице меценатов, закрытый чат и многое другое, всего мест — 50. Покупая этот статус, вы активно участвуете в развитии игры, получаете первыми советы от авторов и влияете на ход событий. Введите произвольную сумму, ваш донат поможет развитию проекта</p>
                     <form class="store__form df disable-md" action="">
@@ -76,141 +79,174 @@
                   <button class="store__btn disabled form__btn" type="submit">Купить</button>
                 </form>
               </div>
-              <div class="store__item">   
-                <div class="store__img"> <picture><source srcset="img/store-img-2.webp" type="image/webp"><img src="img/store-img-2.png" alt=""></picture></div>
-                <div class="store__content"> 
-                  <p class="store__title">Алмазы</p>
-                  <p class="store__desc">Алмазы позволяют приобрести дополнительные предметы в игровом магазине. Можно купить произвольное количество, минимально — 20 штук.</p>
-                  <form class="store__form" action="">
-                    <div class="store__filter"> 
-                      <button class="store__button disabled minus" type="button"></button><span class="store__filter-num">20</span>
-                      <button class="store__button plus" type="button"></button>
-                    </div>
-                    <div class="store__bottom">
-                      <button class="store__btn active" type="submit">Купить</button>
-                      <p class="store__bottom-p discount"><span>740 руб</span> 1057 руб</p>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="store__item">   
-                <div class="store__img discount"> <picture><source srcset="img/store-img-3.webp" type="image/webp"><img src="img/store-img-3.png" alt=""></picture>
-                  <div class="store__abs"> 
-                    <p>-30%</p>
-                  </div>
-                </div>
-                <div class="store__content"> 
-                  <p class="store__title">Пакет прокачки редкого героя</p>
-                  <p class="store__desc mb0">Содержит количество ресурсов, достаточное для прокачки с 1-го до 20-го уровня:</p>
-                  <ul class="store__list"> 
-                    <li class="store__li">Золото: 58 600</li>
-                    <li class="store__li">Осколки: 950</li>
-                  </ul>
-                  <p class="store__desc">Получите скидку 30% в связи с ранним доступом. После вайпа товары вернут, если их купить до вайпа.</p>
-                  <form class="store__form" action="">
-                    <div class="store__bottom">
-                      <button class="store__btn active" type="submit">Купить</button>
-                      <p class="store__bottom-p discount"><span>740 руб</span> <span class="discount">1057 руб</span></p>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="store__item">   
-                <div class="store__img discount"> <picture><source srcset="img/store-img-4.webp" type="image/webp"><img src="img/store-img-4.png" alt=""></picture>
-                  <div class="store__abs"> 
-                    <p>-30%</p>
-                  </div>
-                </div>
-                <div class="store__content"> 
-                  <p class="store__title">Пакет прокачки эпического героя</p>
-                  <p class="store__desc mb0">Содержит количество ресурсов, достаточное для прокачки с 1-го до 30-го уровня:</p>
-                  <ul class="store__list"> 
-                    <li class="store__li">Золото: 192 600</li>
-                    <li class="store__li">Осколки: 2175</li>
-                  </ul>
-                  <p class="store__desc">Получите скидку 30% в связи с ранним доступом. После вайпа товары вернут, если их купить до вайпа.</p>
-                  <form class="store__form" action="">
-                    <div class="store__bottom">
-                      <button class="store__btn active" type="submit">Купить</button>
-                      <p class="store__bottom-p discount"><span>2110 руб</span> <span class="discount">3014 руб</span></p>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="store__item">   
-                <div class="store__img discount"> <picture><source srcset="img/store-img-5.webp" type="image/webp"><img src="img/store-img-5.png" alt=""></picture>
-                  <div class="store__abs"> 
-                    <p>-35%</p>
-                  </div>
-                </div>
-                <div class="store__content"> 
-                  <p class="store__title">Пакет прокачки мифического героя</p>
-                  <p class="store__desc mb0">Содержит количество ресурсов, достаточное для прокачки с 1го до 50го уровня:</p>
-                  <ul class="store__list"> 
-                    <li class="store__li">Золото: 871 100</li>
-                    <li class="store__li">Осколки: 7075</li>
-                  </ul>
-                  <p class="store__desc">Получите скидку 35% в связи с ранним доступом. После вайпа товары вернут, если их купить до вайпа.</p>
-                  <form class="store__form" action="">
-                    <div class="store__bottom">
-                      <button class="store__btn active" type="submit">Купить</button>
-                      <p class="store__bottom-p discount"><span>7 961 руб</span> <span class="discount">12 248 руб</span></p>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="store__item">   
-                <div class="store__img discount"> <picture><source srcset="img/store-img-6.webp" type="image/webp"><img src="img/store-img-6.png" alt=""></picture>
-                  <div class="store__abs"> 
-                    <p>-30%</p>
-                  </div>
-                </div>
-                <div class="store__content"> 
-                  <p class="store__title">Набор из 10 сфер</p>
-                  <p class="store__desc">Сфера позволяет получить легендарных и мифических героев из Портала.</p>
-                  <p class="store__desc">Получите скидку 35% в связи с ранним доступом. После вайпа товары вернут, если их купить до вайпа.</p>
-                  <form class="store__form" action="">
-                    <div class="store__bottom">
-                      <button class="store__btn active" type="submit">Купить</button>
-                      <p class="store__bottom-p discount"><span>875 руб</span> <span class="discount">1250 руб</span></p>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="store__item">   
-                <div class="store__img"><picture><source srcset="img/store-img-7.webp" type="image/webp"><img src="img/store-img-7.png" alt=""></picture></div>
-                <div class="store__content"> 
-                  <p class="store__title">Набор авантюриста</p>
-                  <p class="store__desc mb0">Набор можно приобрести 1 раз на аккаунт.</p>
-                  <ul class="store__list"> 
-                    <li class="store__li">Сферы: 5</li>
-                    <li class="store__li">Свитки: 10</li>
-                    <li class="store__li">Золото: 30 000</li>
-                    <li class="store__li">Осколки: 200</li>
-                  </ul>
-                  <form class="store__form" action="">
-                    <div class="store__bottom">
-                      <button class="store__btn active" type="submit">Купить</button>
-                      <p class="store__bottom-p discount"><span>680 руб</span></p>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="store__item">   
-                <div class="store__img"><picture><source srcset="img/store-img-8.webp" type="image/webp"><img src="img/store-img-8.png" alt=""></picture></div>
-                <div class="store__content"> 
-                  <p class="store__title">Лицензия приключенца</p>
-                  <p class="store__desc">Срок действия: 30 дней.</p>
-                  <p class="store__desc">Повышает награды от активностей (игровые режимы, квесты, повторяемые герои) на 20%.</p>
-                  <form class="store__form" action="">
-                    <div class="store__bottom">
-                      <button class="store__btn active" type="submit">Купить</button>
-                      <p class="store__bottom-p discount"><span>100 руб</span></p>
-                    </div>
-                  </form>
-                </div>
-              </div>
             </div>
+            <div class="rating__content">
+              <div class="rating__line"> 
+                <div class="rating__item pink">
+                  <div class="rating__item-left"> <span class="rating__num">1</span>
+                    <h2 class="rating__name">Верховный инквизитор</h2>
+                    <p class="rating__adress">(ser************7@gmail.com)</p>
+                  </div>
+                  <div class="rating__item-right"> 
+                    <p class="rating__price">7 777 <picture><source srcset="img/rating-money.webp" type="image/webp"><img src="img/rating-money.png" alt="" draggable="false" loading="lazy"></picture> </p>
+                  </div>
+                </div>
+              </div>
+              <div class="rating__line">
+                <div class="rating__item yellow">
+                  <div class="rating__item-left"> <span class="rating__num">2</span>
+                    <h2 class="rating__name">Киридзи</h2>
+                    <p class="rating__adress">(top****6@gmail.com)</p>
+                  </div>
+                  <div class="rating__item-right"> 
+                    <p class="rating__price">3 700 <picture><source srcset="img/rating-money.webp" type="image/webp"><img src="img/rating-money.png" alt="" draggable="false" loading="lazy"></picture></p>
+                  </div>
+                </div>
+                <div class="rating__item yellow">
+                  <div class="rating__item-left"> <span class="rating__num">3</span>
+                    <h2 class="rating__name">Адепт Добра </h2>
+                    <p class="rating__adress">(msh************0@gmail.com)</p>
+                  </div>
+                  <div class="rating__item-right"> 
+                    <p class="rating__price">1 200 <picture><source srcset="img/rating-money.webp" type="image/webp"><img src="img/rating-money.png" alt="" draggable="false" loading="lazy"></picture></p>
+                  </div>
+                </div>
+                <div class="rating__item yellow">
+                  <div class="rating__item-left"> <span class="rating__num">4</span>
+                    <h2 class="rating__name">Plushsamurai</h2>
+                    <p class="rating__adress">(ser************gmail.com)</p>
+                  </div>
+                  <div class="rating__item-right"> 
+                    <p class="rating__price">1 000 <picture><source srcset="img/rating-money.webp" type="image/webp"><img src="img/rating-money.png" alt="" draggable="false" loading="lazy"></picture></p>
+                  </div>
+                </div>
+                <div class="rating__item yellow">
+                  <div class="rating__item-left"> <span class="rating__num">5</span>
+                    <h2 class="rating__name">Nightmare</h2>
+                    <p class="rating__adress">(ser************gmail.com)</p>
+                  </div>
+                  <div class="rating__item-right"> 
+                    <p class="rating__price">1 000 <picture><source srcset="img/rating-money.webp" type="image/webp"><img src="img/rating-money.png" alt="" draggable="false" loading="lazy"></picture></p>
+                  </div>
+                </div>
+              </div>
+              <div class="rating__line">
+                <div class="rating__item green">
+                  <div class="rating__item-left"> <span class="rating__num">6</span>
+                    <h2 class="rating__name">BananaFox</h2>
+                    <p class="rating__adress">(ser************gmail.com)</p>
+                  </div>
+                  <div class="rating__item-right"> 
+                    <p class="rating__price">501 <picture><source srcset="img/rating-money.webp" type="image/webp"><img src="img/rating-money.png" alt="" draggable="false" loading="lazy"></picture></p>
+                  </div>
+                </div>
+                <div class="rating__item green">
+                  <div class="rating__item-left"> <span class="rating__num">7</span>
+                    <h2 class="rating__name">Ersent</h2>
+                    <p class="rating__adress">(ser************gmail.com)</p>
+                  </div>
+                  <div class="rating__item-right"> 
+                    <p class="rating__price">500 <picture><source srcset="img/rating-money.webp" type="image/webp"><img src="img/rating-money.png" alt="" draggable="false" loading="lazy"></picture></p>
+                  </div>
+                </div>
+                <div class="rating__item green">
+                  <div class="rating__item-left"> <span class="rating__num">8</span>
+                    <h2 class="rating__name">Nelega</h2>
+                    <p class="rating__adress">(ser************gmail.com)</p>
+                  </div>
+                  <div class="rating__item-right"> 
+                    <p class="rating__price">333 <picture><source srcset="img/rating-money.webp" type="image/webp"><img src="img/rating-money.png" alt="" draggable="false" loading="lazy"></picture></p>
+                  </div>
+                </div>
+                <div class="rating__item green">
+                  <div class="rating__item-left"> <span class="rating__num">9</span>
+                    <h2 class="rating__name">Aleksandr159</h2>
+                    <p class="rating__adress">(ser************gmail.com)</p>
+                  </div>
+                  <div class="rating__item-right"> 
+                    <p class="rating__price">250 <picture><source srcset="img/rating-money.webp" type="image/webp"><img src="img/rating-money.png" alt="" draggable="false" loading="lazy"></picture></p>
+                  </div>
+                </div>
+                <div class="rating__item green">
+                  <div class="rating__item-left"> <span class="rating__num">10</span>
+                    <h2 class="rating__name">[Anonymous]</h2>
+                    <p class="rating__adress">(ser************gmail.com)</p>
+                  </div>
+                  <div class="rating__item-right"> 
+                    <p class="rating__price">200 <picture><source srcset="img/rating-money.webp" type="image/webp"><img src="img/rating-money.png" alt="" draggable="false" loading="lazy"></picture></p>
+                  </div>
+                </div>
+                <div class="rating__item green">
+                  <div class="rating__item-left"> <span class="rating__num">11</span>
+                    <h2 class="rating__name">Kriomi</h2>
+                    <p class="rating__adress">(ser************gmail.com)</p>
+                  </div>
+                  <div class="rating__item-right"> 
+                    <p class="rating__price">150 <picture><source srcset="img/rating-money.webp" type="image/webp"><img src="img/rating-money.png" alt="" draggable="false" loading="lazy"></picture></p>
+                  </div>
+                </div>
+                <div class="rating__item green">
+                  <div class="rating__item-left"> <span class="rating__num">12</span>
+                    <h2 class="rating__name">Стилгар</h2>
+                    <p class="rating__adress">(ser************gmail.com)</p>
+                  </div>
+                  <div class="rating__item-right"> 
+                    <p class="rating__price">100 <picture><source srcset="img/rating-money.webp" type="image/webp"><img src="img/rating-money.png" alt="" draggable="false" loading="lazy"></picture></p>
+                  </div>
+                </div>
+                <div class="rating__item green">
+                  <div class="rating__item-left"> <span class="rating__num">13</span>
+                    <h2 class="rating__name">ESC</h2>
+                    <p class="rating__adress">(ser************gmail.com)</p>
+                  </div>
+                  <div class="rating__item-right"> 
+                    <p class="rating__price">100 <picture><source srcset="img/rating-money.webp" type="image/webp"><img src="img/rating-money.png" alt="" draggable="false" loading="lazy"></picture></p>
+                  </div>
+                </div>
+                <div class="rating__item green">
+                  <div class="rating__item-left"> <span class="rating__num">14</span>
+                    <h2 class="rating__name">[Anonymous]</h2>
+                    <p class="rating__adress">(ser************gmail.com)</p>
+                  </div>
+                  <div class="rating__item-right"> 
+                    <p class="rating__price">100 <picture><source srcset="img/rating-money.webp" type="image/webp"><img src="img/rating-money.png" alt="" draggable="false" loading="lazy"></picture></p>
+                  </div>
+                </div>
+                <div class="rating__item green">
+                  <div class="rating__item-left"> <span class="rating__num">15</span>
+                    <h2 class="rating__name">Aoket</h2>
+                    <p class="rating__adress">(ser************gmail.com)</p>
+                  </div>
+                  <div class="rating__item-right"> 
+                    <p class="rating__price">100 <picture><source srcset="img/rating-money.webp" type="image/webp"><img src="img/rating-money.png" alt="" draggable="false" loading="lazy"></picture></p>
+                  </div>
+                </div>
+              </div>
+              <div class="rating__line"> 
+                <div class="rating__item grey">
+                  <div class="rating__item-left"> <span class="rating__num">16</span>
+                    <h2 class="rating__name">Anaraks</h2>
+                    <p class="rating__adress">(ser************gmail.com)</p>
+                  </div>
+                  <div class="rating__item-right"> 
+                    <p class="rating__price">90 <picture><source srcset="img/rating-money.webp" type="image/webp"><img src="img/rating-money.png" alt="" draggable="false" loading="lazy"></picture></p>
+                  </div>
+                </div>
+                <div class="rating__item grey">
+                  <div class="rating__item-left"> <span class="rating__num">17</span>
+                    <h2 class="rating__name">Хозяин Клея</h2>
+                    <p class="rating__adress">(ser************gmail.com)</p>
+                  </div>
+                  <div class="rating__item-right"> 
+                    <p class="rating__price">80 <picture><source srcset="img/rating-money.webp" type="image/webp"><img src="img/rating-money.png" alt="" draggable="false" loading="lazy"></picture></p>
+                  </div>
+                </div>
+              </div>
+            </div><a class="rating__btn rating__btn_bottom" href="#!">
+              Попасть в доску <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 6H12" stroke="#0E322F"/>
+<path d="M7 1C7.86854 3.72607 8.88726 4.84527 12 6C8.90751 7.18829 7.95537 8.37847 7 11" stroke="#0E322F" stroke-width="1.5"/>
+</svg> </a>
           </div>
         </section>
       </main>

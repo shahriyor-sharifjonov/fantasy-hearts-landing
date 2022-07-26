@@ -1,0 +1,18 @@
+.rating{
+    padding-bottom: 80px;
+    @include media(1200){
+        padding-bottom: 60px;
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        column-gap: 56px;
+        margin-bottom: 73px;
+    }
+    .store__item{
+        width: 100%;
+    }
+    .store__content{
+        margin-top: 33px;
+    }
+}
