@@ -6,12 +6,139 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="css/style.min.css")
         title Fantasy Hearts
-    body 
+    body.white 
         .wrapper 
             include components/header 
-            +header 
+            +header('2')
             main.main 
-                p main 214
+                .breadcrumb 
+                    .breadcrumb__body.container
+                        p.breadcrumb__p #[a(href="index.html") Главная] 
+                            <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.5 0L4.44532 2.55468L7 3.5L4.44532 4.44532L3.5 7L2.55468 4.44532L0 3.5L2.55468 2.55468L3.5 0Z" fill="#68827F"/>
+                            </svg>
+                            | #[a(href="store.html").active Магазин]
+                section.store 
+                    .store__body.container 
+                        h2.store__subtitle.subtitle 
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.5 0L17.1462 9.85378L27 13.5L17.1462 17.1462L13.5 27L9.85378 17.1462L0 13.5L9.85378 9.85378L13.5 0Z" fill="#0E322F"/>
+                            </svg> Магазин
+                        .store__row
+                            .store__wrapper 
+                                .store__item    
+                                    .store__img 
+                                        img(src="@img/store-img-1.png", alt="")
+                                    .store__content 
+                                        p.store__title Меценат
+                                        p.store__desc Покупка статуса «Меценат» дает вам рейтинг в таблице меценатов, закрытый чат и многое другое, всего мест — 50. Покупая этот статус, вы активно участвуете в развитии игры, получаете первыми советы от авторов и влияете на ход событий. Введите произвольную сумму, ваш донат поможет развитию проекта
+                                        form(action="").store__form.df.disable-md
+                                            input(type="number" placeholder="Введите сумму в руб").store__input
+                                            button(type="submit").store__btn.disabled.form__btn Купить
+                                form(action="").store__form.df.enable-md
+                                    input(type="number" placeholder="Введите сумму в руб").store__input
+                                    button(type="submit").store__btn.disabled.form__btn Купить
+                            .store__item    
+                                .store__img 
+                                    img(src="@img/store-img-2.png", alt="")
+                                .store__content 
+                                    p.store__title Алмазы
+                                    p.store__desc Алмазы позволяют приобрести дополнительные предметы в игровом магазине. Можно купить произвольное количество, минимально — 20 штук.
+                                    form(action="").store__form
+                                        .store__filter 
+                                            button(type="button").store__button.disabled.minus
+                                            span.store__filter-num 20
+                                            button(type="button").store__button.plus
+                                        .store__bottom
+                                            button(type="submit").store__btn.active Купить
+                                            p.store__bottom-p.discount #[span 740 руб] 1057 руб
+                            .store__item    
+                                .store__img.discount 
+                                    img(src="@img/store-img-3.png", alt="")
+                                    .store__abs 
+                                        p -30%
+                                .store__content 
+                                    p.store__title Пакет прокачки редкого героя
+                                    p.store__desc.mb0 Содержит количество ресурсов, достаточное для прокачки с 1-го до 20-го уровня:
+                                    ul.store__list 
+                                        li.store__li Золото: 58 600
+                                        li.store__li Осколки: 950
+                                    p.store__desc Получите скидку 30% в связи с ранним доступом. После вайпа товары вернут, если их купить до вайпа.
+                                    form(action="").store__form
+                                        .store__bottom
+                                            button(type="submit").store__btn.active Купить
+                                            p.store__bottom-p.discount #[span 740 руб] #[span.discount 1057 руб]
+                            .store__item    
+                                .store__img.discount 
+                                    img(src="@img/store-img-4.png", alt="")
+                                    .store__abs 
+                                        p -30%
+                                .store__content 
+                                    p.store__title Пакет прокачки эпического героя
+                                    p.store__desc.mb0 Содержит количество ресурсов, достаточное для прокачки с 1-го до 30-го уровня:
+                                    ul.store__list 
+                                        li.store__li Золото: 192 600
+                                        li.store__li Осколки: 2175
+                                    p.store__desc Получите скидку 30% в связи с ранним доступом. После вайпа товары вернут, если их купить до вайпа.
+                                    form(action="").store__form
+                                        .store__bottom
+                                            button(type="submit").store__btn.active Купить
+                                            p.store__bottom-p.discount #[span 2110 руб] #[span.discount 3014 руб]
+                            .store__item    
+                                .store__img.discount 
+                                    img(src="@img/store-img-5.png", alt="")
+                                    .store__abs 
+                                        p -35%
+                                .store__content 
+                                    p.store__title Пакет прокачки мифического героя
+                                    p.store__desc.mb0 Содержит количество ресурсов, достаточное для прокачки с 1го до 50го уровня:
+                                    ul.store__list 
+                                        li.store__li Золото: 871 100
+                                        li.store__li Осколки: 7075
+                                    p.store__desc Получите скидку 35% в связи с ранним доступом. После вайпа товары вернут, если их купить до вайпа.
+                                    form(action="").store__form
+                                        .store__bottom
+                                            button(type="submit").store__btn.active Купить
+                                            p.store__bottom-p.discount #[span 7 961 руб] #[span.discount 12 248 руб]
+                            .store__item    
+                                .store__img.discount 
+                                    img(src="@img/store-img-6.png", alt="")
+                                    .store__abs 
+                                        p -30%
+                                .store__content 
+                                    p.store__title Набор из 10 сфер
+                                    p.store__desc Сфера позволяет получить легендарных и мифических героев из Портала.
+                                    p.store__desc Получите скидку 35% в связи с ранним доступом. После вайпа товары вернут, если их купить до вайпа.
+                                    form(action="").store__form
+                                        .store__bottom
+                                            button(type="submit").store__btn.active Купить
+                                            p.store__bottom-p.discount #[span 875 руб] #[span.discount 1250 руб]
+                            .store__item    
+                                .store__img
+                                    img(src="@img/store-img-7.png", alt="")
+                                .store__content 
+                                    p.store__title Набор авантюриста
+                                    p.store__desc.mb0 Набор можно приобрести 1 раз на аккаунт.
+                                    ul.store__list 
+                                        li.store__li Сферы: 5
+                                        li.store__li Свитки: 10
+                                        li.store__li Золото: 30 000
+                                        li.store__li Осколки: 200
+                                    form(action="").store__form
+                                        .store__bottom
+                                            button(type="submit").store__btn.active Купить
+                                            p.store__bottom-p.discount #[span 680 руб]
+                            .store__item    
+                                .store__img
+                                    img(src="@img/store-img-8.png", alt="")
+                                .store__content 
+                                    p.store__title Лицензия приключенца
+                                    p.store__desc Срок действия: 30 дней.
+                                    p.store__desc Повышает награды от активностей (игровые режимы, квесты, повторяемые герои) на 20%.
+                                    form(action="").store__form
+                                        .store__bottom
+                                            button(type="submit").store__btn.active Купить
+                                            p.store__bottom-p.discount #[span 100 руб]
             include components/footer 
-            +footer
+            +footer 
         script(src="js/app.min.js")  

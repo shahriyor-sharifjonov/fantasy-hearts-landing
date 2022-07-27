@@ -30,6 +30,10 @@ button{
 body{
     background: #000;
     color: #fff;
+    &.white{
+        background: #fff;
+        color: #000;
+    }
 }
 .title{
     display: flex;
@@ -60,13 +64,37 @@ body{
         }
     }
 }
-
+.subtitle{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    font-family: Antikvarika;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 63px;
+    letter-spacing: -0.02em;
+    color: #0E322F;
+    @include media(768){
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 36px;
+        column-gap: 8px;
+    }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
 .rect{
     --bg: #D4EAE8;
     --size: 8px;
     position: relative;
     padding: 7px 12px;
-    margin-bottom: 50px;
     &>.rect{
         &-top{
             position: absolute;

@@ -1,37 +1,55 @@
-mixin header() 
+mixin header(num) 
     header.header 
         .header__nav.container 
             a(href="#!").header__logo
                 img(src="@img/logo.png", alt="" draggable="false") 
             ul.header__list 
                 li.header__li 
-                    a(href="#!").header__link.active Главная 
+                    if num === '1'
+                        a(href="index.html").header__link.active Главная 
+                    else
+                        a(href="index.html").header__link Главная 
                 li.header__li 
-                    a(href="#!").header__link Магазин 
+                    if num === '2'
+                        a(href="store.html").header__link.active Магазин
+                    else 
+                        a(href="store.html").header__link Магазин 
                 li.header__li 
-                    a(href="#!").header__link Рейтинг меценатов 
+                    if num === '3'
+                        a(href="rating.html").header__link.active Рейтинг меценатов 
+                    else
+                        a(href="rating.html").header__link Рейтинг меценатов 
                 li.header__li 
-                    a(href="#!").header__link Об игре
+                    if num === '4'
+                        a(href="about.html").header__link.active Об игре
+                    else
+                        a(href="about.html").header__link Об игре
                 li.header__li 
-                    a(href="#!").header__link Герои
+                    if num === '5'
+                        a(href="heroes.html").header__link.active Герои
+                    else 
+                        a(href="heroes.html").header__link Герои
                 li.header__li 
-                    a(href="#!").header__link Новости
+                    if num === '6'
+                        a(href="news.html").header__link.active Новости
+                    else
+                        a(href="news.html").header__link Новости
             button.header__button
                 span.header__button-line
         .header__menu 
             ul.header__menu-list 
                 li.header__menu-li 
-                    a(href="#!").header__menu-link Главная 
+                    a(href="index.html").header__menu-link Главная 
                 li.header__menu-li 
-                    a(href="#!").header__menu-link Магазин 
+                    a(href="store.html").header__menu-link Магазин 
                 li.header__menu-li 
-                    a(href="#!").header__menu-link Рейтинг меценатов 
+                    a(href="rating.html").header__menu-link Рейтинг меценатов 
                 li.header__menu-li 
-                    a(href="#!").header__menu-link Об игре
+                    a(href="about.html").header__menu-link Об игре
                 li.header__menu-li 
-                    a(href="#!").header__menu-link Герои
+                    a(href="heroes.html").header__menu-link Герои
                 li.header__menu-li 
-                    a(href="#!").header__menu-link Новости
+                    a(href="news.html").header__menu-link Новости
             .header__menu-soc 
                 p.header__menu-soc-title Мы в соцсетях:
                 .header__menu-soc-row

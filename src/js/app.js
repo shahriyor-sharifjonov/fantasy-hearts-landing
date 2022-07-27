@@ -96,12 +96,19 @@ const gamePlaySwiper = () => {
 }
 
 const heroSlider = () => {
-    var swiper1 = new Swiper(".hero__content", {
-        spaceBetween: 4,
+    new Swiper(".hero__swiper", {
         slidesPerView: "auto",
-        watchSlidesProgress: true,
+        roundLengths: true,
         centeredSlides: true,
-        initialSlide: 2,
+        loop: true,
+        // breakpoints: {
+        //     768: {
+        //       slidesPerView: 2,
+        //     },
+        //     1200: {
+        //         slidesPerView: 5
+        //     }
+        // },
     });
 }
 
@@ -111,7 +118,7 @@ window.addEventListener('load', () => {
     if(document.querySelector('.gameplay__pagination')){
         gamePlaySwiper()
     }
-    if(document.querySelector('.hero__content')){
+    if(document.querySelector('.hero__swiper')){
         heroSlider()
     }
 })
@@ -119,4 +126,5 @@ window.addEventListener('load', () => {
 window.addEventListener('resize', () => {
     setHeaderLinks()
 })
+
 
