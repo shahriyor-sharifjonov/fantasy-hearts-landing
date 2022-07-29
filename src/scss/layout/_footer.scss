@@ -6,6 +6,7 @@
     padding-top: 100px;
     margin-top: 70px;
     padding-bottom: 25px;
+    z-index: 15;
     @include media(768){
         padding-top: 50px;
         padding-bottom: 60px;

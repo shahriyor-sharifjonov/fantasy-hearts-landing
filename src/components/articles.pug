@@ -66,13 +66,48 @@ mixin article()
             +rect
 
 mixin articles()
-    .articles 
-        .articles__body.container 
-            .showcase
+    .articles
+        .articles__inner
+            .showcase 
+                .moon 
+                    img(src="@img/moon.png", alt="" draggable="false")
                 .stars
             .articles__content
-                .articles__swiper.swiper 
-                    .articles__wrapper.swiper-wrapper 
-                        +article
-                        +article
+                .articles__body.container 
+                    .articles__top
+                        p.articles__title 
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5 0L13.336 7.66405L21 10.5L13.336 13.336L10.5 21L7.66405 13.336L0 10.5L7.66405 7.66405L10.5 0Z" fill="white"/>
+                            </svg>
+                            | Актуальные новости
+                        a(href="news.html").articles__btn.rect Все новости
+                            <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 6H12" stroke="#D4EAE8"/>
+                                <path d="M7 1C7.86854 3.72607 8.88726 4.84527 12 6C8.90751 7.18829 7.95537 8.37847 7 11" stroke="#D4EAE8" stroke-width="1.5"/>
+                            </svg> 
+                            +rect
+                    .articles__swiper.swiper 
+                        .articles__wrapper.swiper-wrapper 
+                            +article
+                            +article
+                    .articles__nav  
+                        button(type="button" title="prev").articles__prev.swiper-button-prev 
+                            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 33.5858V12.4142L12.4142 1H33.5858L45 12.4142V33.5858L33.5858 45H12.4142L1 33.5858Z" stroke="#D4EAE8" stroke-width="2"/>
+                                <path d="M29 23H17" stroke="#D4EAE8"/>
+                                <path d="M22 18C21.1315 20.7261 20.1127 21.8453 17 23C20.0925 24.1883 21.0446 25.3785 22 28" stroke="#D4EAE8" stroke-width="1.5"/>
+                            </svg>
+                        button(type="button" title="next").articles__next.swiper-button-next 
+                            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 33.5858V12.4142L12.4142 1H33.5858L45 12.4142V33.5858L33.5858 45H12.4142L1 33.5858Z" stroke="#D4EAE8" stroke-width="2"/>
+                                <path d="M17 23H29" stroke="#D4EAE8"/>
+                                <path d="M24 18C24.8685 20.7261 25.8873 21.8453 29 23C25.9075 24.1883 24.9554 25.3785 24 28" stroke="#D4EAE8" stroke-width="1.5"/>
+                            </svg>
+                    a(href="news.html").articles__btn.rect.sm Все новости
+                            <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 6H12" stroke="#D4EAE8"/>
+                                <path d="M7 1C7.86854 3.72607 8.88726 4.84527 12 6C8.90751 7.18829 7.95537 8.37847 7 11" stroke="#D4EAE8" stroke-width="1.5"/>
+                            </svg> 
+                            +rect
+
                     

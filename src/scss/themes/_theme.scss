@@ -10,9 +10,8 @@
         outline: none;
     }
 }
-html,
-body{
-    height: 100%;
+html{
+    width: 100%;
 }
 .wrapper{
     min-height: 100%;
@@ -30,6 +29,8 @@ button{
 body{
     background: #000;
     color: #fff;
+    width: 100%;
+    overflow-x: hidden;
     &.white{
         background: #fff;
         color: #000;
@@ -198,5 +199,79 @@ input[type=number] {
         z-index: 1; 
         animation: linear blink-fly infinite;
         transform: rotate(-14.35deg);
+    }
+    .stars{
+        animation: linear rotate infinite 400s;    
+        height: 100%;
+        padding-bottom: 200%;
+        width: calc(100% + 100%);
+        margin-left: -50%;
+        margin-right: -50%;
+        margin-top: -20%;
+    }
+    .moon{
+        position: absolute;
+        top: 60px;
+        left: 28%;
+        z-index: 2;
+        img{
+            box-shadow: inset 12px 8px 23px rgba(10, 23, 46, 0.74);
+            filter: drop-shadow(0px 2px 40px rgba(138, 204, 232, 0.4));
+            border-radius: 50%;
+        }
+    }
+    .content{
+        background: url('../img/leaderboard-background.png') top / cover no-repeat;
+        padding-bottom: 100px;
+        @include media(768){
+            padding-top: 60px;
+        }
+    }
+}
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes blink-fly {
+    0% {
+      opacity: 0;
+      transform: translate(640px, -160px) rotate(-14.35deg);
+    }
+    10%{
+        opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translate(0px, 0px) rotate(-14.35deg);
+    }
+}
+
+@keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0) translateY(0);
+    }
+    100% {
+        transform: rotate(-360deg) translateY(-100px);
     }
 }

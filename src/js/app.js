@@ -113,7 +113,7 @@ const articlesSlider = () => {
     new Swiper(".articles__swiper", {
         modules: [Navigation],
         slidesPerView: 1.03,
-        spaceBetween: 12,
+        spaceBetween: 15,
         navigation: {
             nextEl: ".articles__next",
             prevEl: ".articles__prev",
@@ -155,24 +155,24 @@ const generateStars = () => {
 }
   
 const generateFlyingStars = () => {
-const showcase = document.querySelector('.showcase');
+    const showcase = document.querySelector('.showcase');
 
-const getRandomNumber = (max = 100, min = 0) => Math.floor(Math.random() * (max - min + 1) + min)
-const starDuration = 500;
+    const getRandomNumber = (max = 100, min = 0) => Math.floor(Math.random() * (max - min + 1) + min)
+    const starDuration = 500;
 
-const starCreator = () => {
-    const starTop = getRandomNumber() + "%";
-    const starLeft = getRandomNumber() + "%";
-    const star = document.createElement("span");
-    star.classList.add("flying-star");
-    star.style.top = starTop;
-    star.style.left = starLeft;
-    star.style.animationDuration = starDuration + "ms";
-    showcase.insertAdjacentElement("beforeend", star);
-    setTimeout(() => {
-    star.remove();
-    }, 500);
-};
+    const starCreator = () => {
+        const starTop = getRandomNumber() + "%";
+        const starLeft = getRandomNumber() + "%";
+        const star = document.createElement("span");
+        star.classList.add("flying-star");
+        star.style.top = starTop;
+        star.style.left = starLeft;
+        star.style.animationDuration = starDuration + "ms";
+        showcase.insertAdjacentElement("beforeend", star);
+        setTimeout(() => {
+        star.remove();
+        }, 500);
+    };
 
     setInterval(() => {
         starCreator()
@@ -194,11 +194,11 @@ window.addEventListener('load', () => {
     }
     if(document.querySelector('.showcase')){
         generateFlyingStars()
+        generateStars()
     }
 })
 
 window.addEventListener('resize', () => {
-    generateStars()
     setHeaderLinks()
 })
 
