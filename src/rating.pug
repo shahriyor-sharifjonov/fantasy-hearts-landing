@@ -13,7 +13,7 @@ html(lang="en")
             include components/header 
             +header 
             main.main 
-                .breadcrumb 
+                .breadcrumb     
                     .breadcrumb__body.container
                         p.breadcrumb__p #[a(href="index.html") Главная]
                             <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,7 +21,7 @@ html(lang="en")
                             </svg>
                             | #[a(href="store.html").active Рейтинг меценатов]
                 section.rating 
-                    .rating__body.container 
+                    .rating__body.container
                         .rating__top 
                             .rating__left
                                 h2.rating__subtitle.subtitle
@@ -51,8 +51,9 @@ html(lang="en")
                                         .rating__item.pink
                                             .rating__item-left 
                                                 span.rating__num 1
-                                                h2.rating__name Верховный инквизитор
-                                                p.rating__adress (ser************7@gmail.com)
+                                                .rating__item-flex 
+                                                    h2.rating__name Верховный инквизитор
+                                                    p.rating__adress (ser************7@gmail.com)
                                             .rating__item-right 
                                                 p.rating__price 7 777 #[img(src="@img/rating-money.png", alt="" draggable="false" loading="lazy")] 
                                 .rating__line
@@ -60,32 +61,36 @@ html(lang="en")
                                         .rating__item.yellow
                                             .rating__item-left 
                                                 span.rating__num 2
-                                                h2.rating__name Киридзи
-                                                p.rating__adress (top****6@gmail.com)
+                                                .rating__item-flex 
+                                                    h2.rating__name Киридзи
+                                                    p.rating__adress (top****6@gmail.com)
                                             .rating__item-right 
                                                 p.rating__price 3 700 #[img(src="@img/rating-money.png", alt="" draggable="false" loading="lazy")]
                                     .rating__item-wrap.yellow
                                         .rating__item.yellow
                                             .rating__item-left 
                                                 span.rating__num 3
-                                                h2.rating__name Адепт Добра 
-                                                p.rating__adress (msh************0@gmail.com)
+                                                .rating__item-flex 
+                                                    h2.rating__name Адепт Добра 
+                                                    p.rating__adress (msh************0@gmail.com)
                                             .rating__item-right 
                                                 p.rating__price 1 200 #[img(src="@img/rating-money.png", alt="" draggable="false" loading="lazy")]
                                     .rating__item-wrap.yellow
                                         .rating__item.yellow
                                             .rating__item-left 
                                                 span.rating__num 4
-                                                h2.rating__name Plushsamurai
-                                                p.rating__adress (ser************gmail.com)
+                                                .rating__item-flex 
+                                                    h2.rating__name Plushsamurai
+                                                    p.rating__adress (ser************gmail.com)
                                             .rating__item-right 
                                                 p.rating__price 1 000 #[img(src="@img/rating-money.png", alt="" draggable="false" loading="lazy")]
                                     .rating__item-wrap.yellow
                                         .rating__item.yellow
                                             .rating__item-left 
                                                 span.rating__num 5
-                                                h2.rating__name Nightmare
-                                                p.rating__adress (ser************gmail.com)
+                                                .rating__item-flex 
+                                                    h2.rating__name Nightmare
+                                                    p.rating__adress (ser************gmail.com)
                                             .rating__item-right 
                                                 p.rating__price 1 000 #[img(src="@img/rating-money.png", alt="" draggable="false" loading="lazy")]
                                 .rating__line
@@ -93,80 +98,90 @@ html(lang="en")
                                         .rating__item.green
                                             .rating__item-left 
                                                 span.rating__num 6
-                                                h2.rating__name BananaFox
-                                                p.rating__adress (ser************gmail.com)
+                                                .rating__item-flex 
+                                                    h2.rating__name BananaFox
+                                                    p.rating__adress (ser************gmail.com)
                                             .rating__item-right 
                                                 p.rating__price 501 #[img(src="@img/rating-money.png", alt="" draggable="false" loading="lazy")]
                                     .rating__item-wrap.green
                                         .rating__item.green
                                             .rating__item-left 
                                                 span.rating__num 7
-                                                h2.rating__name Ersent
-                                                p.rating__adress (ser************gmail.com)
+                                                .rating__item-flex 
+                                                    h2.rating__name Ersent
+                                                    p.rating__adress (ser************gmail.com)
                                             .rating__item-right 
                                                 p.rating__price 500 #[img(src="@img/rating-money.png", alt="" draggable="false" loading="lazy")]
                                     .rating__item-wrap.green
-                                        .rating__item.green
+                                        .rating__item.green 
                                             .rating__item-left 
                                                 span.rating__num 8
-                                                h2.rating__name Nelega
-                                                p.rating__adress (ser************gmail.com)
+                                                .rating__item-flex 
+                                                    h2.rating__name Nelega
+                                                    p.rating__adress (ser************gmail.com)
                                             .rating__item-right 
                                                 p.rating__price 333 #[img(src="@img/rating-money.png", alt="" draggable="false" loading="lazy")]
                                     .rating__item-wrap.green
                                         .rating__item.green
                                             .rating__item-left 
                                                 span.rating__num 9
-                                                h2.rating__name Aleksandr159
-                                                p.rating__adress (ser************gmail.com)
+                                                .rating__item-flex 
+                                                    h2.rating__name Aleksandr159
+                                                    p.rating__adress (ser************gmail.com)
                                             .rating__item-right 
                                                 p.rating__price 250 #[img(src="@img/rating-money.png", alt="" draggable="false" loading="lazy")]
                                     .rating__item-wrap.green
                                         .rating__item.green
                                             .rating__item-left 
                                                 span.rating__num 10
-                                                h2.rating__name [Anonymous]
-                                                p.rating__adress (ser************gmail.com)
+                                                .rating__item-flex 
+                                                    h2.rating__name [Anonymous]
+                                                    p.rating__adress (ser************gmail.com)
                                             .rating__item-right 
                                                 p.rating__price 200 #[img(src="@img/rating-money.png", alt="" draggable="false" loading="lazy")]
                                     .rating__item-wrap.green
                                         .rating__item.green
                                             .rating__item-left 
                                                 span.rating__num 11
-                                                h2.rating__name Kriomi
-                                                p.rating__adress (ser************gmail.com)
+                                                .rating__item-flex 
+                                                    h2.rating__name Kriomi
+                                                    p.rating__adress (ser************gmail.com)
                                             .rating__item-right 
                                                 p.rating__price 150 #[img(src="@img/rating-money.png", alt="" draggable="false" loading="lazy")]
                                     .rating__item-wrap.green
                                         .rating__item.green
                                             .rating__item-left 
                                                 span.rating__num 12
-                                                h2.rating__name Стилгар
-                                                p.rating__adress (ser************gmail.com)
+                                                .rating__item-flex 
+                                                    h2.rating__name Стилгар
+                                                    p.rating__adress (ser************gmail.com)
                                             .rating__item-right 
                                                 p.rating__price 100 #[img(src="@img/rating-money.png", alt="" draggable="false" loading="lazy")]
                                     .rating__item-wrap.green
                                         .rating__item.green
                                             .rating__item-left 
                                                 span.rating__num 13
-                                                h2.rating__name ESC
-                                                p.rating__adress (ser************gmail.com)
+                                                .rating__item-flex 
+                                                    h2.rating__name ESC 
+                                                    p.rating__adress (ser************gmail.com)
                                             .rating__item-right 
                                                 p.rating__price 100 #[img(src="@img/rating-money.png", alt="" draggable="false" loading="lazy")]
                                     .rating__item-wrap.green
                                         .rating__item.green
                                             .rating__item-left 
                                                 span.rating__num 14
-                                                h2.rating__name [Anonymous]
-                                                p.rating__adress (ser************gmail.com)
+                                                .rating__item-flex 
+                                                    h2.rating__name [Anonymous]
+                                                    p.rating__adress (ser************gmail.com)
                                             .rating__item-right 
                                                 p.rating__price 100 #[img(src="@img/rating-money.png", alt="" draggable="false" loading="lazy")]
                                     .rating__item-wrap.green
                                         .rating__item.green
                                             .rating__item-left 
                                                 span.rating__num 15
-                                                h2.rating__name Aoket
-                                                p.rating__adress (ser************gmail.com)
+                                                .rating__item-flex 
+                                                    h2.rating__name Aoket
+                                                    p.rating__adress (ser************gmail.com)
                                             .rating__item-right 
                                                 p.rating__price 100 #[img(src="@img/rating-money.png", alt="" draggable="false" loading="lazy")]
                                 .rating__line 
@@ -174,16 +189,18 @@ html(lang="en")
                                         .rating__item.grey
                                             .rating__item-left 
                                                 span.rating__num 16
-                                                h2.rating__name Anaraks
-                                                p.rating__adress (ser************gmail.com)
+                                                .rating__item-flex 
+                                                    h2.rating__name Anaraks
+                                                    p.rating__adress (ser************gmail.com)
                                             .rating__item-right 
                                                 p.rating__price 90 #[img(src="@img/rating-money.png", alt="" draggable="false" loading="lazy")]
                                     .rating__item-wrap.grey
                                         .rating__item.grey
                                             .rating__item-left 
                                                 span.rating__num 17
-                                                h2.rating__name Хозяин Клея
-                                                p.rating__adress (ser************gmail.com)
+                                                .rating__item-flex 
+                                                    h2.rating__name Хозяин Клея
+                                                    p.rating__adress (ser************gmail.com)
                                             .rating__item-right 
                                                 p.rating__price 80 #[img(src="@img/rating-money.png", alt="" draggable="false" loading="lazy")]
                         a(href="#!").rating__btn.rating__btn_bottom.rect Попасть в доску 
