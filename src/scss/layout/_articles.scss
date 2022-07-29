@@ -18,6 +18,28 @@
         padding: 32px 24px 24px 32px;
         width: 500px;
         background: url('../img/article-bg.png') center / cover no-repeat;
+        &-title{
+            font-family: 'Antikvarika';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 36px;
+            margin-bottom: 8px;
+            color: #0E322F;
+        }
+        &-date{
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            color: rgba(#0E322F, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
         &-p{
             font-weight: 400;
             font-size: 16px;

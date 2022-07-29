@@ -2403,6 +2403,36 @@
   width: 500px;
 }
 
+.articles__slide-title {
+  font-family: "Antikvarika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 8px;
+  color: #0E322F;
+}
+
+.articles__slide-date {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(14, 50, 47, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
 .articles__slide-p {
   font-weight: 400;
   font-size: 16px;
