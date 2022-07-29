@@ -235,6 +235,9 @@ input[type=number] {
     z-index: 3;
     padding-top: 55px;
     overflow: hidden;
+    &__wrapper{
+        background: url('../img/showcase-bg.png') top / cover no-repeat !important;
+    }
     &__inner{
         width: 100%;
         overflow: hidden;
@@ -256,7 +259,12 @@ input[type=number] {
         font-size: 56px;
         line-height: 63px;
         letter-spacing: -0.02em;
-        color: #FFFFFF;        
+        color: #FFFFFF; 
+        @include media(576){
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 36px;
+        }       
     }
     &__breadcrumb{
         padding-top: 0 !important;
@@ -270,6 +278,9 @@ input[type=number] {
     }
     &__showcase{
         margin-top: -140px !important;
+        @include media(576){
+            margin-top: 0 !important;
+        }
     }
     &__content{
         display: flex;
