@@ -124,6 +124,11 @@
   overflow: hidden;
 }
 
+.header.shadow {
+  -webkit-filter: drop-shadow(0px 0px 15px black);
+          filter: drop-shadow(0px 0px 15px black);
+}
+
 .no-webp .header::before {
   background: url("../img/header-overlay.png"); }
 
@@ -2454,6 +2459,14 @@
 }
 
 .articles__btn.sm {
+  margin-top: 25px;
+  max-width: 343px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.articles__btn.sm:not(.flex) {
   display: none;
 }
 
@@ -2870,6 +2883,85 @@ input[type=number] {
   padding-bottom: 100px;
 }
 
+.news {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  padding-top: 55px;
+  overflow: hidden;
+}
+
+.news__inner {
+  width: 100%;
+  overflow: hidden;
+  background: #0A172E;
+  padding-top: 100px;
+}
+
+.news__top {
+  position: relative;
+  z-index: 5;
+}
+
+.news__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+  font-family: "Antikvarika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 63px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+
+.news__breadcrumb {
+  padding-top: 0 !important;
+  padding-bottom: 40px !important;
+}
+
+.news__breadcrumb .breadcrumb__p {
+  color: #fff !important;
+}
+
+.news__breadcrumb .breadcrumb__p a {
+  color: #fff !important;
+}
+
+.news__showcase {
+  margin-top: -140px !important;
+}
+
+.news__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+
+.news__article {
+  width: 100%;
+}
+
+.news__moon {
+  left: auto !important;
+  right: 28% !important;
+}
+
 @-webkit-keyframes blink {
   0% {
     opacity: 1;
@@ -3266,7 +3358,7 @@ input[type=number] {
     padding-bottom: 24px;
   }
 
-  .articles__btn {
+  .articles__btn:not(.flex) {
     display: none;
   }
 
@@ -3274,11 +3366,6 @@ input[type=number] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 25px;
-    max-width: 343px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .articles__nav {
@@ -3904,6 +3991,18 @@ input[type=number] {
 
   .articles__slide-btn {
     display: none;
+  }
+
+  .news__moon {
+    left: 72px !important;
+    right: auto !important;
+    width: 65px !important;
+    height: 65px !important;
+  }
+
+  .news__moon img {
+    width: 100%;
+    height: 100%;
   }
 }
 

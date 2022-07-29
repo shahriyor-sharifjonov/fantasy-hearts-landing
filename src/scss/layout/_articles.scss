@@ -65,17 +65,21 @@
         color: #D4EAE8;
         --bg: #D4EAE840 !important;
         @include media(992){
-            display: none;
+            &:not(.flex){
+                display: none;
+            }
         }
         &.sm{
-            display: none;
+            &:not(.flex){
+                display: none;
+            }
+            margin-top: 25px;
+            max-width: 343px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
             @include media(992){
                 display: flex;
-                margin-top: 25px;
-                max-width: 343px;
-                width: 100%;
-                margin-left: auto;
-                margin-right: auto;
             }
         }
     }
