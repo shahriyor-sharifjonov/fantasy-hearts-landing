@@ -127,6 +127,59 @@ const articlesSlider = () => {
     });
 }
 
+const generateStars = () => {
+    const showcase = document.querySelector('.showcase .stars');
+  
+    const getRandomNumber = (max = 100, min = 0) => Math.floor(Math.random() * (max - min + 1) + min)
+    
+    const starCreator = () => {
+        const starSize = getRandomNumber(6, 3) + "px";
+        const starTop = getRandomNumber() + "%";
+        const starLeft = getRandomNumber() + "%";
+        const starDuration = getRandomNumber(8000, 3000) + "ms";
+        const star = document.createElement("span");
+        star.classList.add("star");
+        star.style.height = starSize;
+        star.style.width = starSize;
+        star.style.top = starTop;
+        star.style.left = starLeft;
+        star.style.animationDuration = starDuration;
+        showcase.insertAdjacentElement("beforeend", star);
+    };
+  
+    const starNum = window.innerWidth / 3;
+  
+    for (let i = 0; i < starNum; i++) {
+        starCreator();
+    }
+}
+  
+const generateFlyingStars = () => {
+const showcase = document.querySelector('.showcase');
+
+const getRandomNumber = (max = 100, min = 0) => Math.floor(Math.random() * (max - min + 1) + min)
+const starDuration = 500;
+
+const starCreator = () => {
+    const starTop = getRandomNumber() + "%";
+    const starLeft = getRandomNumber() + "%";
+    const star = document.createElement("span");
+    star.classList.add("flying-star");
+    star.style.top = starTop;
+    star.style.left = starLeft;
+    star.style.animationDuration = starDuration + "ms";
+    showcase.insertAdjacentElement("beforeend", star);
+    setTimeout(() => {
+    star.remove();
+    }, 500);
+};
+
+    setInterval(() => {
+        starCreator()
+        starCreator()
+    }, 595);
+}
+
 window.addEventListener('load', () => {
     setHeaderLinks()
     headerMenu()
@@ -139,9 +192,13 @@ window.addEventListener('load', () => {
     if(document.querySelector('.articles__swiper')){
         articlesSlider()
     }
+    if(document.querySelector('.showcase')){
+        generateFlyingStars()
+    }
 })
 
 window.addEventListener('resize', () => {
+    generateStars()
     setHeaderLinks()
 })
 

@@ -68,8 +68,11 @@ mixin article()
 mixin articles()
     .articles 
         .articles__body.container 
-            .articles__swiper.swiper 
-                .articles__wrapper.swiper-wrapper 
-                    +article
-                    +article
+            .showcase
+                .stars
+            .articles__content
+                .articles__swiper.swiper 
+                    .articles__wrapper.swiper-wrapper 
+                        +article
+                        +article
                     
