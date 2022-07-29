@@ -24,8 +24,7 @@ mixin hero()
                                         img(src="@img/hero-big-1.png", alt="" draggable="false")
                                     .hero__slide-ground 
                                         .hero__slide-ground-img
-                                    span.hero__slide-tag.rect Человек, Воин
-                                        +rect
+                                    span.hero__slide-tag Человек, Воин
                                     p.hero__slide-title Городской стражник
                                     p.hero__slide-p На своем веку он повидал всякое. От того и не рвется в атаку, предпочитая «Играть от обороны»
                                     .hero__infos 
@@ -76,8 +75,7 @@ mixin hero()
                                         img(src="@img/hero-big-2.png", alt="" draggable="false")
                                     .hero__slide-ground 
                                         .hero__slide-ground-img
-                                    span.hero__slide-tag.rect Человек, Стрелок
-                                        +rect
+                                    span.hero__slide-tag Человек, Стрелок
                                     p.hero__slide-title Охотник
                                     p.hero__slide-p Он отлично разбирается в следах разного зверя, и хорошо ориентируется в лесу, однако все это не поможет ему в бою, чего нельзя сказать про его надежный лук.
                                     .hero__infos 
@@ -128,8 +126,7 @@ mixin hero()
                                         img(src="@img/hero-big-3.png", alt="" draggable="false")
                                     .hero__slide-ground 
                                         .hero__slide-ground-img
-                                    span.hero__slide-tag.rect Человек, Маг
-                                        +rect
+                                    span.hero__slide-tag Человек, Маг
                                     p.hero__slide-title Ученик Волшебника
                                     p.hero__slide-p Еще не маг, но уже не простой человек. Первый шаг к могуществу и управлению магическими потоками уже сделан. 
                                     .hero__infos 
@@ -182,8 +179,7 @@ mixin hero()
                                         img(src="@img/hero-big-4.png", alt="" draggable="false")
                                     .hero__slide-ground.blue 
                                         .hero__slide-ground-img
-                                    span.hero__slide-tag.rect Человек, Поддержка
-                                        +rect
+                                    span.hero__slide-tag Человек, Поддержка
                                     p.hero__slide-title Жрец Солнца
                                     p.hero__slide-p Из рук его льется небесный свет, очищая и заживляя раны. Незаменимый союзник и верный друг.
                                     .hero__infos 
@@ -236,8 +232,7 @@ mixin hero()
                                         img(src="@img/hero-big-5.png", alt="" draggable="false")
                                     .hero__slide-ground.pink 
                                         .hero__slide-ground-img
-                                    span.hero__slide-tag.rect Эльф, Маг
-                                        +rect
+                                    span.hero__slide-tag Эльф, Маг
                                     p.hero__slide-title Эльфийский оракул Эльтиар
                                     p.hero__slide-p От взора его не скроется ни прошлое, ни будущее. Некоторые поговаривают, что он может даже повлиять на судьбу.
                                     .hero__infos  
@@ -276,3 +271,23 @@ mixin hero()
                                                 </clipPath>
                                                 </defs>
                                             </svg>   
+                .hero__pagination 
+                    .swiper-button-prev.hero__prev
+                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M38.0206 1L51 13.9794V38.0206L38.0206 51H13.9794L1 38.0206V13.9794L13.9794 1H38.0206Z" stroke="#D4EAE8" stroke-width="2"/>
+                            <path d="M32 26H20" stroke="#0E322F"/>
+                            <path d="M25 21C24.1315 23.7261 23.1127 24.8453 20 26C23.0925 27.1883 24.0446 28.3785 25 31" stroke="#0E322F" stroke-width="1.5"/>
+                        </svg>
+                    .swiper-button-next.hero__next
+                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 38.0206V13.9794L13.9794 1H38.0206L51 13.9794V38.0206L38.0206 51H13.9794L1 38.0206Z" stroke="#D4EAE8" stroke-width="2"/>
+                            <path d="M20 26H32" stroke="#0E322F"/>
+                            <path d="M27 21C27.8685 23.7261 28.8873 24.8453 32 26C28.9075 27.1883 27.9554 28.3785 27 31" stroke="#0E322F" stroke-width="1.5"/>
+                        </svg>
+                a(href="heroes.html").hero__button Все герои
+                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 6H12" stroke="#0E322F"/>
+                        <path d="M7 1C7.86854 3.72607 8.88726 4.84527 12 6C8.90751 7.18829 7.95537 8.37847 7 11" stroke="#0E322F" stroke-width="1.5"/>
+                    </svg>
+
+

@@ -61,3 +61,24 @@ $break-point in $sizes {
         left: $left;
     }
 }
+
+@mixin rect($size: 22px) {
+    clip-path: polygon($size 0%, calc(100% - $size) 0%, 100% $size, 100% calc(100% - $size), calc(100% - $size) 100%, $size 100%, 0% calc(100% - $size), 0% $size);
+}
+
+@mixin rect-border($size: 22px, $border-width: 3px, $color: #D4EAE8) {
+    clip-path: polygon($size 0%, calc(100% - $size) 0%, 100% $size, 100% calc(100% - $size), calc(100% - $size) 100%, $size 100%, 0% calc(100% - $size), 0% $size);
+    background-color: $color;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        background: #fff;
+        top: $border-width;
+        left: $border-width;
+        right: $border-width;
+        bottom: $border-width;
+        z-index: -1;
+        clip-path: polygon($size 0%, calc(100% - $size) 0%, 100% $size, 100% calc(100% - $size), calc(100% - $size) 100%, $size 100%, 0% calc(100% - $size), 0% $size);
+    }
+}
