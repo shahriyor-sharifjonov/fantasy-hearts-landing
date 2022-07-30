@@ -1,10 +1,7 @@
 .breadcrumb{
     padding-top: 160px;
     padding-bottom: 40px;
-    @include media(1400){
-        padding-top: 145px;
-    }
-    @include media(992){
+    @include media(576){
         padding-top: 120px;
         padding-bottom: 24px;
     }

@@ -87,19 +87,15 @@
             display: flex;
             justify-content: space-between;
             align-items: stretch;
-            background: url(../img/store-form-bg.png) center / cover no-repeat;
             height: 54px;
             width: 388px;
+            @include rect-border(12px, 2px);
             @include media(768){
                 margin-left: auto;
             }
             @include media(575){
                 height: 48px;
-                width: 350px;
-            }
-            @include media(450){
-                width: 290px;
-                background: url(../img/store-form-bg-md.png) center / cover no-repeat;
+                width: 100%;
             }
         }
         &.enable-md{
@@ -134,17 +130,16 @@
         height: 100%;
         padding: 13px 24px;
         transition: 300ms ease;
+        background: #0E322F;
+        @include rect(12px);
         @include media(576){
             font-weight: 400;
             font-size: 20px;
             line-height: 23px;
             height: 48px;
-        }
-        &.disabled{
-            background: url(../img/store-button_light.png) center / cover no-repeat !important;
-        }
-        &.active{
-            background: url(../img/store-button_dark.png) center / cover no-repeat !important;
+        } 
+        &:disabled{
+            background: #AAC5C2;
         }
     }
     &__filter{

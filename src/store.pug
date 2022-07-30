@@ -34,10 +34,10 @@ html(lang="en")
                                         p.store__desc Покупка статуса «Меценат» дает вам рейтинг в таблице меценатов, закрытый чат и многое другое, всего мест — 50. Покупая этот статус, вы активно участвуете в развитии игры, получаете первыми советы от авторов и влияете на ход событий. Введите произвольную сумму, ваш донат поможет развитию проекта
                                         form(action="").store__form.df.disable-md
                                             input(type="number" placeholder="Введите сумму в руб").store__input
-                                            button(type="submit").store__btn.disabled.form__btn Купить
+                                            button(type="submit" disabled).store__btn.form__btn Купить
                                 form(action="").store__form.df.enable-md
                                     input(type="number" placeholder="Введите сумму в руб").store__input
-                                    button(type="submit").store__btn.disabled.form__btn Купить
+                                    button(type="submit" disabled).store__btn.form__btn Купить
                             .store__item    
                                 .store__img 
                                     img(src="@img/store-img-2.png", alt="")
@@ -46,7 +46,7 @@ html(lang="en")
                                     p.store__desc Алмазы позволяют приобрести дополнительные предметы в игровом магазине. Можно купить произвольное количество, минимально — 20 штук.
                                     form(action="").store__form
                                         .store__filter 
-                                            button(type="button").store__button.disabled.minus
+                                            button(type="button" disabled).store__button.minus
                                             span.store__filter-num 20
                                             button(type="button").store__button.plus
                                         .store__bottom

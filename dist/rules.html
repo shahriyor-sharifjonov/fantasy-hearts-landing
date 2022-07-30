@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220730181534">
-    <title>Fantasy Hearts</title>
+<!DOCTYPE html >
+<html lang="en"> 
+  <head> 
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=20220730181534"/>
+    <title>Fantasy Hearts  </title>
   </head>
   <body class="white"> 
     <div class="wrapper"> 
             <header class="header"> 
-              <div class="header__nav container"> <a class="header__logo" href="#!"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="" draggable="false"></picture></a>
+              <div class="header__nav container"> <a class="header__logo" href="#!"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="" draggable="false"/></picture></a>
                 <ul class="header__list"> 
                   <li class="header__li"> <a class="header__link" href="index.html">Главная </a>
                   </li>
-                  <li class="header__li"> <a class="header__link active" href="store.html">Магазин</a>
+                  <li class="header__li"> <a class="header__link" href="store.html">Магазин </a>
                   </li>
                   <li class="header__li"> <a class="header__link" href="rating.html">Рейтинг меценатов </a>
                   </li>
@@ -49,173 +49,57 @@
               </div>
             </header>
       <main class="main"> 
-        <div class="breadcrumb"> 
-          <div class="breadcrumb__body container">
+        <div class="breadcrumb">    
+          <div class="breadcrumb__body container"> 
             <p class="breadcrumb__p"><a href="index.html">Главная</a> <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3.5 0L4.44532 2.55468L7 3.5L4.44532 4.44532L3.5 7L2.55468 4.44532L0 3.5L2.55468 2.55468L3.5 0Z" fill="#68827F"/>
-</svg><a class="active" href="store.html">Магазин</a>
+</svg><a href="rating.html">Рейтинг меценатов</a> <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.5 0L4.44532 2.55468L7 3.5L4.44532 4.44532L3.5 7L2.55468 4.44532L0 3.5L2.55468 2.55468L3.5 0Z" fill="#68827F"/>
+</svg><a class="active" href="store.html">Правила</a> 
             </p>
           </div>
         </div>
-        <section class="store"> 
-          <div class="store__body container"> 
-            <h2 class="store__subtitle subtitle">
-               <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <section class="rules"> 
+          <div class="rules__body container">
+            <h2 class="rules__title"><svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.5 0L17.1462 9.85378L27 13.5L17.1462 17.1462L13.5 27L9.85378 17.1462L0 13.5L9.85378 9.85378L13.5 0Z" fill="#0E322F"/>
-</svg> Магазин
+</svg> Правила
             </h2>
-            <div class="store__row">
-              <div class="store__wrapper"> 
+            <div class="rules__content"> 
+              <div class="rules__left"> 
+                <p class="rating__desc">1. Меценат автоматически попадает в Таблицу 1-50 при условии, что его (ее) донат перекрывает предыдущие донаты (либо в таблице есть свободное место). <br><br>2. Меценаты, находящиеся в Таблице 1-50, остаются там до перекрытия доната. Соответственно, происходит понижение номера. <br><br>3. Меценат, который снова передал донат, получает отображение общей суммы и перемещение (в случае необходимости) в верх таблицы. <br><br>4. Меценат, опустившийся вниз с 50 места (последнее), выбывает из таблицы. Повторное занятие места в таблице возможно только в случае перекрытия имеющихся меценатов по сумме. <br><br>5. По итогам года Топ-1 Меценат получает от создателей игры Особенный Персональный Подарок. <br><br>6. Если какой-либо Меценат был изгнан из группы (за нарушения) или получил бан (либо добровольно покинул группу) — такой меценат из таблицы выбывает (обнуление). Чтите Порядок!</p>
                 <div class="store__item">   
-                  <div class="store__img"> <picture><source srcset="img/store-img-1.webp" type="image/webp"><img src="img/store-img-1.png" alt=""></picture></div>
-                  <div class="store__content"> 
+                  <div class="store__img"> <picture><source srcset="img/store-img-1.webp" type="image/webp"><img src="img/store-img-1.png" alt=""/></picture></div>
+                  <div class="store__content rating__item-content"> 
                     <p class="store__title">Меценат</p>
                     <p class="store__desc">Покупка статуса «Меценат» дает вам рейтинг в таблице меценатов, закрытый чат и многое другое, всего мест — 50. Покупая этот статус, вы активно участвуете в развитии игры, получаете первыми советы от авторов и влияете на ход событий. Введите произвольную сумму, ваш донат поможет развитию проекта</p>
                     <form class="store__form df disable-md" action="">
-                      <input class="store__input" type="number" placeholder="Введите сумму в руб">
-                      <button class="store__btn form__btn" type="submit" disabled>Купить</button>
+                      <input class="store__input" type="number" placeholder="Введите сумму в руб"/>
+                      <button class="store__btn form__btn" type="submit" disabled="disabled">Купить</button>
                     </form>
                   </div>
                 </div>
-                <form class="store__form df enable-md" action="">
-                  <input class="store__input" type="number" placeholder="Введите сумму в руб">
-                  <button class="store__btn form__btn" type="submit" disabled>Купить</button>
+                <form class="store__form df enable-md" action="#">
+                  <input class="store__input" type="number" placeholder="Введите сумму в руб"/>
+                  <button class="store__btn form__btn" type="submit" disabled="disabled">Купить</button>
                 </form>
+                <div class="rules__info enable-xxl">Весь полученный донат тратится на развитие игры</div>
               </div>
-              <div class="store__item">   
-                <div class="store__img"> <picture><source srcset="img/store-img-2.webp" type="image/webp"><img src="img/store-img-2.png" alt=""></picture></div>
-                <div class="store__content"> 
-                  <p class="store__title">Алмазы</p>
-                  <p class="store__desc">Алмазы позволяют приобрести дополнительные предметы в игровом магазине. Можно купить произвольное количество, минимально — 20 штук.</p>
-                  <form class="store__form" action="">
-                    <div class="store__filter"> 
-                      <button class="store__button minus" type="button" disabled></button><span class="store__filter-num">20</span>
-                      <button class="store__button plus" type="button"></button>
-                    </div>
-                    <div class="store__bottom">
-                      <button class="store__btn active" type="submit">Купить</button>
-                      <p class="store__bottom-p discount"><span>740 руб</span> 1057 руб</p>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="store__item">   
-                <div class="store__img discount"> <picture><source srcset="img/store-img-3.webp" type="image/webp"><img src="img/store-img-3.png" alt=""></picture>
-                  <div class="store__abs"> 
-                    <p>-30%</p>
+              <div class="rules__right"> 
+                <div class="rules__item-wrap">
+                  <div class="rules__item"> 
+                    <p class="rules__item-title">Чем меценат отличается от других игроков?</p>
+                    <p class="rules__item-p">В игре каждый меценат получит ряд отличительных особенностей: яркие рамки аватаров с коронами разной степени крутости. Топ-10 будут одни отличия, с 11 по 25-е место — другие, а вот с 26 по 50-е реализуем третий вариант. <br>Вокруг ника мецената будет красивая рамка — таким образом каждый будет знать, что вы не рядовой игрок и участвуете в развитии игры. <br>Каждый меценат на форуме игры получит особый статус, который также будет отличать его от остальных участников игрового комьюнити. <br>Будут отдельные голосования и опросы для меценатов, закрытый чат, возможность напрямую общаться с командой игры и доносить свое мнение, жалобы и пожелания. А также много всего другого.</p>
+                    <p class="rules__item-title">Кто может участвовать?</p>
+                    <p class="rules__item-p">Сумма участия в развитии игры стартует от 100 рублей. Чем больше ваша сумма участия, тем выше вы в рейтинге меценатов. <br>Но помните — мест в таблице активных меценатов всего 50. Выбыть из таблицы меценатов можно, если вы окажетесь на 51 месте по сумме участия. Таким образом, в игре всегда будет не более 50 участников с отличительными знаками и возможностями общения и влияния на ход игры.</p>
                   </div>
                 </div>
-                <div class="store__content"> 
-                  <p class="store__title">Пакет прокачки редкого героя</p>
-                  <p class="store__desc mb0">Содержит количество ресурсов, достаточное для прокачки с 1-го до 20-го уровня:</p>
-                  <ul class="store__list"> 
-                    <li class="store__li">Золото: 58 600</li>
-                    <li class="store__li">Осколки: 950</li>
-                  </ul>
-                  <p class="store__desc">Получите скидку 30% в связи с ранним доступом. После вайпа товары вернут, если их купить до вайпа.</p>
-                  <form class="store__form" action="">
-                    <div class="store__bottom">
-                      <button class="store__btn active" type="submit">Купить</button>
-                      <p class="store__bottom-p discount"><span>740 руб</span> <span class="discount">1057 руб</span></p>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="store__item">   
-                <div class="store__img discount"> <picture><source srcset="img/store-img-4.webp" type="image/webp"><img src="img/store-img-4.png" alt=""></picture>
-                  <div class="store__abs"> 
-                    <p>-30%</p>
-                  </div>
-                </div>
-                <div class="store__content"> 
-                  <p class="store__title">Пакет прокачки эпического героя</p>
-                  <p class="store__desc mb0">Содержит количество ресурсов, достаточное для прокачки с 1-го до 30-го уровня:</p>
-                  <ul class="store__list"> 
-                    <li class="store__li">Золото: 192 600</li>
-                    <li class="store__li">Осколки: 2175</li>
-                  </ul>
-                  <p class="store__desc">Получите скидку 30% в связи с ранним доступом. После вайпа товары вернут, если их купить до вайпа.</p>
-                  <form class="store__form" action="">
-                    <div class="store__bottom">
-                      <button class="store__btn active" type="submit">Купить</button>
-                      <p class="store__bottom-p discount"><span>2110 руб</span> <span class="discount">3014 руб</span></p>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="store__item">   
-                <div class="store__img discount"> <picture><source srcset="img/store-img-5.webp" type="image/webp"><img src="img/store-img-5.png" alt=""></picture>
-                  <div class="store__abs"> 
-                    <p>-35%</p>
-                  </div>
-                </div>
-                <div class="store__content"> 
-                  <p class="store__title">Пакет прокачки мифического героя</p>
-                  <p class="store__desc mb0">Содержит количество ресурсов, достаточное для прокачки с 1го до 50го уровня:</p>
-                  <ul class="store__list"> 
-                    <li class="store__li">Золото: 871 100</li>
-                    <li class="store__li">Осколки: 7075</li>
-                  </ul>
-                  <p class="store__desc">Получите скидку 35% в связи с ранним доступом. После вайпа товары вернут, если их купить до вайпа.</p>
-                  <form class="store__form" action="">
-                    <div class="store__bottom">
-                      <button class="store__btn active" type="submit">Купить</button>
-                      <p class="store__bottom-p discount"><span>7 961 руб</span> <span class="discount">12 248 руб</span></p>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="store__item">   
-                <div class="store__img discount"> <picture><source srcset="img/store-img-6.webp" type="image/webp"><img src="img/store-img-6.png" alt=""></picture>
-                  <div class="store__abs"> 
-                    <p>-30%</p>
-                  </div>
-                </div>
-                <div class="store__content"> 
-                  <p class="store__title">Набор из 10 сфер</p>
-                  <p class="store__desc">Сфера позволяет получить легендарных и мифических героев из Портала.</p>
-                  <p class="store__desc">Получите скидку 35% в связи с ранним доступом. После вайпа товары вернут, если их купить до вайпа.</p>
-                  <form class="store__form" action="">
-                    <div class="store__bottom">
-                      <button class="store__btn active" type="submit">Купить</button>
-                      <p class="store__bottom-p discount"><span>875 руб</span> <span class="discount">1250 руб</span></p>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="store__item">   
-                <div class="store__img"><picture><source srcset="img/store-img-7.webp" type="image/webp"><img src="img/store-img-7.png" alt=""></picture></div>
-                <div class="store__content"> 
-                  <p class="store__title">Набор авантюриста</p>
-                  <p class="store__desc mb0">Набор можно приобрести 1 раз на аккаунт.</p>
-                  <ul class="store__list"> 
-                    <li class="store__li">Сферы: 5</li>
-                    <li class="store__li">Свитки: 10</li>
-                    <li class="store__li">Золото: 30 000</li>
-                    <li class="store__li">Осколки: 200</li>
-                  </ul>
-                  <form class="store__form" action="">
-                    <div class="store__bottom">
-                      <button class="store__btn active" type="submit">Купить</button>
-                      <p class="store__bottom-p discount"><span>680 руб</span></p>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="store__item">   
-                <div class="store__img"><picture><source srcset="img/store-img-8.webp" type="image/webp"><img src="img/store-img-8.png" alt=""></picture></div>
-                <div class="store__content"> 
-                  <p class="store__title">Лицензия приключенца</p>
-                  <p class="store__desc">Срок действия: 30 дней.</p>
-                  <p class="store__desc">Повышает награды от активностей (игровые режимы, квесты, повторяемые герои) на 20%.</p>
-                  <form class="store__form" action="">
-                    <div class="store__bottom">
-                      <button class="store__btn active" type="submit">Купить</button>
-                      <p class="store__bottom-p discount"><span>100 руб</span></p>
-                    </div>
-                  </form>
-                </div>
-              </div>
+                <div class="rules__info disable-xxl">Весь полученный донат тратится на развитие игры</div>
+              </div><a class="rules__btn" href="rating.html">
+                 <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 6H3" stroke="#0E322F"/>
+<path d="M8 1C7.13146 3.72607 6.11274 4.84527 3 6C6.09249 7.18829 7.04463 8.37847 8 11" stroke="#0E322F" stroke-width="1.5"/>
+</svg>Вернуться назад</a>
             </div>
           </div>
         </section>
@@ -225,9 +109,9 @@
                 <div class="footer__top">
                   <div class="footer__col"> 
                     <h1 class="footer__title">Fantasy Hearts</h1>
-                    <p class="footer__desc">by <span>Dreamcraft Studio</span> <img src="img/footer-img-1.svg" alt="" draggable="false" loading="lazy"></p>
+                    <p class="footer__desc">by <span>Dreamcraft Studio</span> <img src="img/footer-img-1.svg" alt="" draggable="false" loading="lazy"/></p>
                     <div class="footer__info"> 
-                      <div class="footer__info-img"> <img src="img/footer-img-2.svg" alt=""></div>
+                      <div class="footer__info-img"> <img src="img/footer-img-2.svg" alt=""/></div>
                       <p class="footer__p">Роспатент: <span>№848834</span></p>
                     </div>
                   </div>

@@ -306,6 +306,152 @@ input[type=number] {
     }
 }
 
+
+.rules{
+    padding-bottom: 95px;
+    &__title{
+        font-family: 'Antikvarika';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 63px;
+        letter-spacing: -0.02em;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+        color: #0E322F;  
+        margin-bottom: 40px;
+        @include media(576){
+            font-size: 32px;
+            line-height: 36px;
+            margin-bottom: 24px;
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        @include media(1400){
+            flex-direction: column;
+            row-gap: 40px;
+        }
+    }
+    &__left{
+        width: calc(50% - 25px);
+        @include media(1400){
+            width: 100%;
+        }
+        .rating__desc{
+            @include media(576){
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+    }
+    &__right{
+        width: calc(50% - 25px);
+        @include media(1400){
+            width: 100%;
+        }
+    }
+    &__item{
+        @include rect-border(12px, 1px, #E3E3E3);
+        padding: 40px 32px 48px 24px;
+        @include media(576){
+            padding: 0;
+            clip-path: none;
+            background: transparent;
+            &::after{
+                display: none;
+            }
+        }
+        &-wrap{
+            filter: drop-shadow(0px 4px 48px #0000001F);
+            margin-bottom: 62px;
+            @include media(1400){
+                margin-bottom: 0;
+            }
+            @include media(576){
+                filter: none;
+            }
+        }
+        &-title{
+            font-family: 'Antikvarika';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 27px;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+            color: #0E322F;
+        }
+        &-p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #68827F;
+            &:not(:last-of-type){
+                margin-bottom: 32px;
+            }
+        }
+    }
+    &__info{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        color: #68827F;
+        position: relative;
+        padding-left: 28px;
+        @include media(576){
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 40px;
+            background: #68827F;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+    }
+    &__btn{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        @include rect-border(12px, 2px, #0E322F20);
+        padding: 13px 16px;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 12px;
+        font-family: 'Antikvarika';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: -0.02em;
+        text-decoration: none;
+        color: #0E322F;
+        @include media(1400){
+            display: flex;
+        }
+    }
+    .store{
+        &__item{
+            width: 100% !important;
+        }
+        &__form{
+            @include media(1400){
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
 @keyframes blink {
     0% {
       opacity: 1;
