@@ -227,16 +227,25 @@ const about = () => {
     const about6 = document.querySelector('#about-6');
     const about7 = document.querySelector('#about-7');
     const about8 = document.querySelector('#about-8');
+    
+    let isAbout1 = elementInViewport(about1);
+    let isAbout2 = elementInViewport(about2);
+    let isAbout3 = elementInViewport(about3);
+    let isAbout4 = elementInViewport(about4);
+    let isAbout5 = elementInViewport(about5);
+    let isAbout6 = elementInViewport(about6);
+    let isAbout7 = elementInViewport(about7);
+    let isAbout8 = elementInViewport(about8);
 
     window.addEventListener('scroll', () => {
-        let isAbout1 = elementInViewport(about1);
-        let isAbout2 = elementInViewport(about2);
-        let isAbout3 = elementInViewport(about3);
-        let isAbout4 = elementInViewport(about4);
-        let isAbout5 = elementInViewport(about5);
-        let isAbout6 = elementInViewport(about6);
-        let isAbout7 = elementInViewport(about7);
-        let isAbout8 = elementInViewport(about8);
+        isAbout1 = elementInViewport(about1);
+        isAbout2 = elementInViewport(about2);
+        isAbout3 = elementInViewport(about3);
+        isAbout4 = elementInViewport(about4);
+        isAbout5 = elementInViewport(about5);
+        isAbout6 = elementInViewport(about6);
+        isAbout7 = elementInViewport(about7);
+        isAbout8 = elementInViewport(about8);
         
         isMay && isAbout1 ? (slider.slideTo(1)) : '' 
         isMay && isAbout2 ? (slider.slideTo(2)) : '' 
