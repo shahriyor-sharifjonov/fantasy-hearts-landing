@@ -1,0 +1,102 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Fantasy Hearts
+    body.white 
+        .wrapper 
+            include components/header 
+            +header 
+            main.main 
+                .breadcrumb 
+                    .breadcrumb__body.container
+                        p.breadcrumb__p 
+                            a(href="index.html") Главная
+                            <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.5 0L4.44532 2.55468L7 3.5L4.44532 4.44532L3.5 7L2.55468 4.44532L0 3.5L2.55468 2.55468L3.5 0Z" fill="#68827F"/>
+                            </svg>
+                            a(href="#!").active Об игре
+                .about 
+                    .about__top 
+                        .about__item-body.container
+                            .about__item-left
+                                p.about__title 
+                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.5 0L17.1462 9.85378L27 13.5L17.1462 17.1462L13.5 27L9.85378 17.1462L0 13.5L9.85378 9.85378L13.5 0Z" fill="#0E322F"/>
+                                    </svg>
+                                    | Об игре
+                            .about__item-right
+                                p.about__p Мы делаем продукт для всех тех, кто любит олдскульные игры такие как Final Fantasy Tactics, “Герои меча и магии”, “Эадор” или Disciples. Fantasy Hearts — это игра с глубоким тактическим уклоном. Здесь нужно грамотно подбирать отряды и расставлять их на арене в соответствии с поставленной целью.  <br><br>Задача игрока — максимально прокачать своих персонажей и занять верхнюю строчку в таблице лидеров.
+                    .about__header 
+                        .about__header-body.container  
+                            .about__swiper.swiper
+                                .about__wrapper.swiper-wrapper 
+                                    a(href="#about-1").about__slide.swiper-slide.about-target Расы
+                                    a(href="#about-2").about__slide.swiper-slide.about-target Арены
+                                    a(href="#about-3").about__slide.swiper-slide.about-target Ход сражения
+                                    a(href="#about-4").about__slide.swiper-slide.about-target Характеристики персонажей
+                                    a(href="#about-5").about__slide.swiper-slide.about-target Гильдии
+                                    a(href="#about-6").about__slide.swiper-slide.about-target Тренировки героев
+                                    a(href="#about-7").about__slide.swiper-slide.about-target Подготовка к сражению
+                                    a(href="#about-8").about__slide.swiper-slide.about-target Локации
+                                    .about__slide.swiper-slide.wmore 
+                    .about__item#about-1 
+                        .about__item-body.container
+                            .about__item-left
+                                p.about__item-title Мир Fantasy Hearts населяют герои различных рас:
+                                p.about__item-p Каждый из них обладает особыми способностями, которые стоит учитывать при планировании стратегии сражения. Всего в бета-версии доступно 15 персонажей.
+                            .about__item-right
+                                .about__heroes 
+                                    .about__heroes-item
+                                        img(src="@img/about-hero-1.png", alt="" draggable="false")
+                                        p.about__heroes-item-p Люди
+                                    .about__heroes-item
+                                        img(src="@img/about-hero-2.png", alt="" draggable="false")
+                                        p.about__heroes-item-p Гоблины
+                                    .about__heroes-item
+                                        img(src="@img/about-hero-3.png", alt="" draggable="false")
+                                        p.about__heroes-item-p Эльфы 
+                                    .about__heroes-item
+                                        img(src="@img/about-hero-4.png", alt="" draggable="false")
+                                        p.about__heroes-item-p Животные
+                    .about__item#about-2 
+                        .about__item-body.container
+                            .about__item-left
+                                p.about__item-title Игровое поле — боевая арена
+                            .about__item-right
+                    .about__item#about-3 
+                        .about__item-body.container
+                            .about__item-left
+                                p.about__item-title Ход сражения
+                            .about__item-right
+                    .about__item#about-4 
+                        .about__item-body.container
+                            .about__item-left
+                                p.about__item-title Характеристики персонажей
+                            .about__item-right
+                    .about__item#about-5 
+                        .about__item-body.container
+                            .about__item-left
+                                p.about__item-title Гильдии
+                            .about__item-right
+                    .about__item#about-6
+                        .about__item-body.container
+                            .about__item-left
+                                p.about__item-title Тренировки героев
+                            .about__item-right
+                    .about__item#about-7
+                        .about__item-body.container
+                            .about__item-left
+                                p.about__item-title Подготовка к сражению
+                            .about__item-right
+                    .about__item#about-8 
+                        .about__item-body.container
+                            .about__item-left
+                                p.about__item-title Локации
+                            .about__item-right
+            include components/footer 
+            +footer
+        script(src="js/app.min.js")  

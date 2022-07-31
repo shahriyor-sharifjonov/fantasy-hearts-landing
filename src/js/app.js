@@ -6,6 +6,26 @@ import Swiper, { Navigation, Pagination, Thumbs, EffectCoverflow } from 'swiper'
 
 const swiper = new Swiper();
 
+function elementInViewport(el) {
+    var top = el.offsetTop;
+    var left = el.offsetLeft;
+    var width = el.offsetWidth;
+    var height = el.offsetHeight;
+  
+    while(el.offsetParent) {
+      el = el.offsetParent;
+      top += el.offsetTop;
+      left += el.offsetLeft;
+    }
+  
+    return (
+      top >= window.pageYOffset &&
+      left >= window.pageXOffset &&
+      (top + height) <= (window.pageYOffset + window.innerHeight) &&
+      (left + width) <= (window.pageXOffset + window.innerWidth)
+    );
+}
+
 const setHeaderLinks = () => {
     const links = document.querySelectorAll('.header__link');
     const windowWidth = `${document.body.clientWidth}px`;
@@ -180,6 +200,69 @@ const generateFlyingStars = () => {
     }, 595);
 }
 
+const about = () => {
+    let isMay = true;
+
+    const wmore = document.querySelector('.wmore');
+
+    const width = document.querySelector('.about__header-body').clientWidth
+
+    wmore.style.width = `${width - 170}px`;
+
+    const slider = new Swiper(".about__swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 24,
+        breakpoints: {
+            576: {
+                spaceBetween: 40,
+            }
+        }
+    });
+
+    const about1 = document.querySelector('#about-1');
+    const about2 = document.querySelector('#about-2');
+    const about3 = document.querySelector('#about-3');
+    const about4 = document.querySelector('#about-4');
+    const about5 = document.querySelector('#about-5');
+    const about6 = document.querySelector('#about-6');
+    const about7 = document.querySelector('#about-7');
+    const about8 = document.querySelector('#about-8');
+
+    window.addEventListener('scroll', () => {
+        let isAbout1 = elementInViewport(about1);
+        let isAbout2 = elementInViewport(about2);
+        let isAbout3 = elementInViewport(about3);
+        let isAbout4 = elementInViewport(about4);
+        let isAbout5 = elementInViewport(about5);
+        let isAbout6 = elementInViewport(about6);
+        let isAbout7 = elementInViewport(about7);
+        let isAbout8 = elementInViewport(about8);
+        
+        isMay && isAbout1 ? (slider.slideTo(1)) : '' 
+        isMay && isAbout2 ? (slider.slideTo(2)) : '' 
+        isMay && isAbout3 ? (slider.slideTo(3)) : '' 
+        isMay && isAbout4 ? (slider.slideTo(4)) : '' 
+        isMay && isAbout5 ? (slider.slideTo(5)) : '' 
+        isMay && isAbout6 ? (slider.slideTo(6)) : '' 
+        isMay && isAbout7 ? (slider.slideTo(7)) : '' 
+        isMay && isAbout8 ? (slider.slideTo(8)) : '' 
+    })
+
+    const links = document.querySelectorAll('.about-target');
+
+    links.forEach((el, index) => {
+        el.addEventListener('click', () => {
+            isMay = false;
+            const i = index;
+            console.log(i);
+            slider.slideTo(i);
+            setInterval(() => {
+                isMay = true;
+            }, 1200);
+        })
+    })
+}
+
 window.addEventListener('load', () => {
     setHeaderLinks()
     headerMenu()
@@ -195,6 +278,9 @@ window.addEventListener('load', () => {
     if(document.querySelector('.showcase')){
         generateFlyingStars()
         generateStars()
+    }
+    if(document.querySelector('.about')){
+        about()
     }
 })
 
