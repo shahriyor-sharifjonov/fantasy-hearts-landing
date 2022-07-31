@@ -4660,6 +4660,10 @@ input[type=number] {
     margin-bottom: 32px;
   }
 
+  .about__slide {
+    font-size: 18px;
+  }
+
   .about__item-title {
     font-size: 24px;
     line-height: 27px;

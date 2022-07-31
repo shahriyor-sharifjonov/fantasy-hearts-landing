@@ -31,6 +31,9 @@
         padding-bottom: 15px;
         position: relative;
         text-decoration: none;
+        @include media(576){
+            font-size: 18px;
+        }
         &::before{
             content: '';
             position: absolute;
