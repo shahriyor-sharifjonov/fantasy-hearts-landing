@@ -7,6 +7,10 @@
         padding-top: 55px;
         background: #fff;
         border-bottom: 1px solid #0E322F20;
+        margin-bottom: 56px;
+        @include media(576){
+            margin-bottom: 32px;
+        }
     }
     &__swiper{
         width: 100%;
@@ -48,7 +52,161 @@
         }
     }
     &__item{
-        border: 1px solid red;
         scroll-margin: 151px;
+        padding-top: 24px;
+        &:not(:last-of-type){
+            .about__item-body{
+                border-bottom: 1px solid #0E322F20;
+            }
+        }
+        &-body{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-bottom: 80px;
+            @include media(1200){
+                flex-direction: column;
+                row-gap: 40px;
+            }
+        }
+        &-left{
+            width: 400px;
+            @include media(1200){
+                width: 100%;
+            }
+        }
+        &-right{
+            width: 760px;
+            @include media(1200){
+                width: 100%;
+            }
+        }
+        &-title{
+            font-family: 'Antikvarika';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+            color: #0E322F;     
+            max-width: 400px;
+            @include media(576){
+                font-size: 24px;
+                line-height: 27px;
+                margin-bottom: 12px;
+            }       
+        }
+        &-p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #68827F;    
+            max-width: 400px;
+            @include media(576){
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+    }
+    &__top{
+        padding-top: 0;
+        .about__item-body{
+            padding-bottom: 0;
+            border-bottom: none !important;
+        }
+    }
+    &__title{
+        font-family: 'Antikvarika';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 63px;
+        letter-spacing: -0.02em;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+        color: #0E322F; 
+        @include media(992){
+            font-size: 56px;
+            line-height: 63px;
+        }      
+        @include media(576){
+            font-size: 32px;
+            line-height: 36px;
+            gap: 8px;
+            margin-bottom: -20px;
+            svg{
+                width: 16px;
+                height: 16px;
+            }
+        } 
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        letter-spacing: -0.02em;
+        color: #0E322F; 
+        padding-top: 25px; 
+        @include media(1200){
+            padding-top: 0;
+        }    
+        @include media(576){
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+        }  
+    }
+    &__heroes{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 70px;
+        &-item{
+            width: calc(50% - 10px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-img{
+                height: 260px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                line-height: 0;
+                margin-bottom: 32px;
+                @include media(768){
+                    margin-bottom: 28px;
+                    width: 102px;
+                    height: 140px;
+                    picture{
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    img{
+                        max-height: 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+            &-p{
+                font-family: 'Antikvarika';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 36px;
+                text-align: center;
+                letter-spacing: -0.02em;
+                color: #0E322F;   
+                @include media(768){
+                    font-size: 18px;
+                    line-height: 20px;
+                }             
+            }
+        }
     }
 }

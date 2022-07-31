@@ -2753,6 +2753,7 @@
   padding-top: 55px;
   background: #fff;
   border-bottom: 1px solid #0E322F20;
+  margin-bottom: 56px;
 }
 
 .about__swiper {
@@ -2807,8 +2808,141 @@
 }
 
 .about__item {
-  border: 1px solid red;
   scroll-margin: 151px;
+  padding-top: 24px;
+}
+
+.about__item:not(:last-of-type) .about__item-body {
+  border-bottom: 1px solid #0E322F20;
+}
+
+.about__item-body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 80px;
+}
+
+.about__item-left {
+  width: 400px;
+}
+
+.about__item-right {
+  width: 760px;
+}
+
+.about__item-title {
+  font-family: "Antikvarika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+  color: #0E322F;
+  max-width: 400px;
+}
+
+.about__item-p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #68827F;
+  max-width: 400px;
+}
+
+.about__top {
+  padding-top: 0;
+}
+
+.about__top .about__item-body {
+  padding-bottom: 0;
+  border-bottom: none !important;
+}
+
+.about__title {
+  font-family: "Antikvarika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 63px;
+  letter-spacing: -0.02em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 16px;
+  color: #0E322F;
+}
+
+.about__p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: -0.02em;
+  color: #0E322F;
+  padding-top: 25px;
+}
+
+.about__heroes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 70px;
+}
+
+.about__heroes-item {
+  width: calc(50% - 10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__heroes-item-img {
+  height: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 0;
+  margin-bottom: 32px;
+}
+
+.about__heroes-item-p {
+  font-family: "Antikvarika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #0E322F;
 }
 
 * {
@@ -3679,6 +3813,26 @@ input[type=number] {
     margin-bottom: 18px;
   }
 
+  .about__item-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 40px;
+  }
+
+  .about__item-left {
+    width: 100%;
+  }
+
+  .about__item-right {
+    width: 100%;
+  }
+
+  .about__p {
+    padding-top: 0;
+  }
+
   .title svg {
     display: none;
   }
@@ -3781,6 +3935,11 @@ input[type=number] {
 
   .articles__nav {
     width: 100%;
+  }
+
+  .about__title {
+    font-size: 56px;
+    line-height: 63px;
   }
 }
 
@@ -4217,6 +4376,35 @@ input[type=number] {
     height: 16px;
   }
 
+  .about__heroes-item-img {
+    margin-bottom: 28px;
+    width: 102px;
+    height: 140px;
+  }
+
+  .about__heroes-item-img picture {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .about__heroes-item-img img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .about__heroes-item-p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
   .title {
     margin-bottom: 32px;
   }
@@ -4466,6 +4654,40 @@ input[type=number] {
 
   .articles__slide-btn {
     display: none;
+  }
+
+  .about__header {
+    margin-bottom: 32px;
+  }
+
+  .about__item-title {
+    font-size: 24px;
+    line-height: 27px;
+    margin-bottom: 12px;
+  }
+
+  .about__item-p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .about__title {
+    font-size: 32px;
+    line-height: 36px;
+    gap: 8px;
+    margin-bottom: -20px;
+  }
+
+  .about__title svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .about__p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
   }
 
   .news__title {

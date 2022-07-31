@@ -20,7 +20,7 @@ html(lang="en")
                             </svg>
                             a(href="#!").active Об игре
                 .about 
-                    .about__top 
+                    .about__item.about__top 
                         .about__item-body.container
                             .about__item-left
                                 p.about__title 
@@ -32,7 +32,7 @@ html(lang="en")
                                 p.about__p Мы делаем продукт для всех тех, кто любит олдскульные игры такие как Final Fantasy Tactics, “Герои меча и магии”, “Эадор” или Disciples. Fantasy Hearts — это игра с глубоким тактическим уклоном. Здесь нужно грамотно подбирать отряды и расставлять их на арене в соответствии с поставленной целью.  <br><br>Задача игрока — максимально прокачать своих персонажей и занять верхнюю строчку в таблице лидеров.
                     .about__header 
                         .about__header-body.container  
-                            .about__swiper.swiper
+                            .about__swiper.swiper 
                                 .about__wrapper.swiper-wrapper 
                                     a(href="#about-1").about__slide.swiper-slide.about-target Расы
                                     a(href="#about-2").about__slide.swiper-slide.about-target Арены
@@ -51,16 +51,20 @@ html(lang="en")
                             .about__item-right
                                 .about__heroes 
                                     .about__heroes-item
-                                        img(src="@img/about-hero-1.png", alt="" draggable="false")
+                                        .about__heroes-item-img
+                                            img(src="@img/about-hero-1.png", alt="" draggable="false")
                                         p.about__heroes-item-p Люди
                                     .about__heroes-item
-                                        img(src="@img/about-hero-2.png", alt="" draggable="false")
+                                        .about__heroes-item-img
+                                            img(src="@img/about-hero-2.png", alt="" draggable="false")
                                         p.about__heroes-item-p Гоблины
                                     .about__heroes-item
-                                        img(src="@img/about-hero-3.png", alt="" draggable="false")
+                                        .about__heroes-item-img
+                                            img(src="@img/about-hero-3.png", alt="" draggable="false")
                                         p.about__heroes-item-p Эльфы 
                                     .about__heroes-item
-                                        img(src="@img/about-hero-4.png", alt="" draggable="false")
+                                        .about__heroes-item-img
+                                            img(src="@img/about-hero-4.png", alt="" draggable="false")
                                         p.about__heroes-item-p Животные
                     .about__item#about-2 
                         .about__item-body.container
