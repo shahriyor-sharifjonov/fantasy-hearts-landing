@@ -263,7 +263,6 @@ const about = () => {
         el.addEventListener('click', () => {
             isMay = false;
             const i = index;
-            console.log(i);
             slider.slideTo(i);
             setInterval(() => {
                 isMay = true;

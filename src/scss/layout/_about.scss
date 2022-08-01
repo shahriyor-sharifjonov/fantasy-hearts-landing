@@ -1,4 +1,5 @@
 .about{
+    width: 100%;
     &__header{
         width: 100%;
         overflow: hidden;
@@ -8,6 +9,7 @@
         background: #fff;
         border-bottom: 1px solid #0E322F20;
         margin-bottom: 56px;
+        z-index: 5;
         @include media(576){
             margin-bottom: 32px;
         }
@@ -57,9 +59,34 @@
     &__item{
         scroll-margin: 151px;
         padding-top: 24px;
+        position: relative;
+        &:not(.about__top)::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 800px;
+            background: url('../img/about-item.png');
+            background-size: 1300px;
+            z-index: -1;
+        }
         &:not(:last-of-type){
             .about__item-body{
                 border-bottom: 1px solid #0E322F20;
+            }
+        }
+        &#about-1{
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: auto;
+                right: 0;
+                width: 1300px;
+                height: 800px;
+                z-index: -1;
+                background: url('../img/about-item.png');
             }
         }
         &-body{
@@ -99,6 +126,11 @@
             letter-spacing: -0.02em;
             color: #0E322F;     
             max-width: 400px;
+            &.mb-0{
+                @include media(1200){
+                    margin-bottom: 0 !important;
+                }
+            }
             @include media(576){
                 font-size: 24px;
                 line-height: 27px;
@@ -264,6 +296,7 @@
         }
         svg{
             width: 40px;
+            min-width: 40px;
             height: 40px;
         }
     }
@@ -281,6 +314,84 @@
             line-height: 0;
             img{
                 width: 100%;
+            }
+        }
+    }
+    &__battle{
+        &-title{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 48px;
+            letter-spacing: -0.02em;
+            color: #0E322F;
+            @include media(576){
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                letter-spacing: -0.02em;
+                color: #0E322F;
+                opacity: 0.6;
+                margin-bottom: 24px;
+            }
+        }
+        &-content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 48px;
+        }
+        &-item{
+            width: calc(50% - 40px);
+            @include media(768){
+                width: calc(50% - 24px);
+            }
+            @include media(576){
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                width: 100%;
+            }
+            svg{
+                margin-bottom: 16px;
+                width: 64px;
+                height: 64px;
+                min-width: 64px;
+                @include media(576){
+                    margin-bottom: 0;
+                    margin-right: 16px;
+                }
+            }
+            &-title{
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 28px;
+                margin-bottom: 12px;
+                letter-spacing: -0.02em;
+                color: #0E322F;
+                @include media(576){
+                    display: none;
+                }
+            }
+            &-p{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                color: #68827F;
+                @include media(576){
+                    display: none;
+                }
+            }
+            &-sm{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                color: #68827F;
+                display: none;
+                @include media(576){
+                    display: block;
+                    margin-top: 12px;
+                }
             }
         }
     }
