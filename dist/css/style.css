@@ -4822,6 +4822,10 @@ input[type=number] {
     margin-bottom: 24px;
   }
 
+  .articles__content {
+    padding-top: 30px;
+  }
+
   .articles__slide {
     padding: 20px;
   }
@@ -4937,15 +4941,10 @@ input[type=number] {
     line-height: 36px;
   }
 
-  .news__showcase {
-    margin-top: 0 !important;
-  }
-
   .news__moon {
-    left: 72px !important;
-    right: auto !important;
     width: 65px !important;
     height: 65px !important;
+    right: 50px !important;
   }
 
   .news__moon img {

@@ -99,6 +99,9 @@
         padding-top: 170px;
         padding-bottom: 100px;
         background: url('../img/showcase-bg-1.png') top / cover no-repeat;
+        @include media(576){
+            padding-top: 30px;
+        }
     }
     
     &__slide{
