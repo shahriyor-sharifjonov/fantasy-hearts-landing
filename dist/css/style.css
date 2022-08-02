@@ -1494,7 +1494,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   gap: 16px;
-  margin-bottom: 40px;
 }
 
 .hero__pagination * {

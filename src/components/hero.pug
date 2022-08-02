@@ -9,6 +9,19 @@ mixin hero()
                     +star-icon 
                     p Выбери своего героя
                     +star-icon
+                .hero__pagination 
+                    .swiper-button-prev.hero__prev
+                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M38.0206 1L51 13.9794V38.0206L38.0206 51H13.9794L1 38.0206V13.9794L13.9794 1H38.0206Z" stroke="#D4EAE8" stroke-width="2"/>
+                            <path d="M32 26H20" stroke="#0E322F"/>
+                            <path d="M25 21C24.1315 23.7261 23.1127 24.8453 20 26C23.0925 27.1883 24.0446 28.3785 25 31" stroke="#0E322F" stroke-width="1.5"/>
+                        </svg>
+                    .swiper-button-next.hero__next
+                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 38.0206V13.9794L13.9794 1H38.0206L51 13.9794V38.0206L38.0206 51H13.9794L1 38.0206Z" stroke="#D4EAE8" stroke-width="2"/>
+                            <path d="M20 26H32" stroke="#0E322F"/>
+                            <path d="M27 21C27.8685 23.7261 28.8873 24.8453 32 26C28.9075 27.1883 27.9554 28.3785 27 31" stroke="#0E322F" stroke-width="1.5"/>
+                        </svg>
                 .hero__content
                     .swiper.hero__swiper  
                         .swiper-wrapper 
@@ -271,19 +284,6 @@ mixin hero()
                                                 </clipPath>
                                                 </defs>
                                             </svg>   
-                .hero__pagination 
-                    .swiper-button-prev.hero__prev
-                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M38.0206 1L51 13.9794V38.0206L38.0206 51H13.9794L1 38.0206V13.9794L13.9794 1H38.0206Z" stroke="#D4EAE8" stroke-width="2"/>
-                            <path d="M32 26H20" stroke="#0E322F"/>
-                            <path d="M25 21C24.1315 23.7261 23.1127 24.8453 20 26C23.0925 27.1883 24.0446 28.3785 25 31" stroke="#0E322F" stroke-width="1.5"/>
-                        </svg>
-                    .swiper-button-next.hero__next
-                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 38.0206V13.9794L13.9794 1H38.0206L51 13.9794V38.0206L38.0206 51H13.9794L1 38.0206Z" stroke="#D4EAE8" stroke-width="2"/>
-                            <path d="M20 26H32" stroke="#0E322F"/>
-                            <path d="M27 21C27.8685 23.7261 28.8873 24.8453 32 26C28.9075 27.1883 27.9554 28.3785 27 31" stroke="#0E322F" stroke-width="1.5"/>
-                        </svg>
                 a(href="heroes.html").hero__button Все герои
                     <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 6H12" stroke="#0E322F"/>
