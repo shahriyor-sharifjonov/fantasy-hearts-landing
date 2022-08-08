@@ -269,6 +269,11 @@ const about = () => {
             }, 1200);
         })
     })
+
+    new Swiper(".about__char-swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 5,
+    });
 }
 
 window.addEventListener('load', () => {
